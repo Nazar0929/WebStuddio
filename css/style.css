@@ -1,0 +1,352 @@
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Raleway", sans-serif; */
+
+:root {
+    --backgroung-color: #FFF;
+    --accent-color:  #FFFFFF;
+    --additional-accent: #2196F3;
+    --text-color: #757575;
+    --footer: #2F303A;
+    --background-section: #F5F4FA;
+    --head-text: #212121;
+    --href-moments: #2196F3;
+    --web-studio: #000000; 
+}
+.logos {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+.nav-link {
+    font-family: "Roboto", sans-serif;
+}
+.header-contact {
+    font-family: "Roboto", sans-serif;
+}
+body {
+    font-family: "Roboto";
+    color: var(--head-text);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+h1, h2, h3, p, ul{
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.header .container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.logo-span {
+    color: var(--href-moments);
+}
+
+.logos {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--web-studio);
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.list-caption {
+    margin-right: 50px;
+}
+
+.list-caption:last-child{
+    margin-right: 0;
+    
+}
+
+.list-caption{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--head-text);
+}
+
+.nav-link {
+    color: var(--head-text);
+}
+
+  
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--href-moments);
+}
+
+.list-description {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contact-text:first-child {
+    margin-right: 50px;
+}
+
+.header-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--href-moments);
+}
+
+.main-hero {
+  
+    max-width: 696px;
+    margin:0 auto ;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+.main-hero:hover {
+    color:#757575
+
+}
+
+.section-hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--footer);
+}
+
+.button-main {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    transition: border-radius 0.4s ease;
+    background-color: var(--additional-accent);
+    color: var(--accent-color);
+    padding: 10px 32px;
+}
+
+.button-main:hover,
+.button-main:focus {
+    border-radius: 15px;
+  background-color: var(--accent-color);
+  color: var(--additional-accent) 
+}
+
+.main-text {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+.description-texxt {
+    display: none;
+  }
+
+.text-item {
+    display: flex; 
+}
+
+.main-item {
+    max-width: 270px;
+    margin-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-item:last-child {
+    margin-right: 0;
+}
+
+.texxt {
+    font-weight: 700;
+    font-size: 14px;
+    transition: font-size 0.4s ease;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+.texxt:hover {
+    font-size: 16px;
+}
+
+.descript-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+ 
+.yes {
+    padding-bottom: 94px;
+}
+
+.work-item {
+    font-weight: 700;
+    font-size: 36px;
+    transition: font-size 0.3s ease;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.work-item:hover {
+    font-size: 40px;
+}
+.workk {
+    display: flex;
+    margin-right: 90px;
+}
+
+
+.people {
+    margin-left: auto;
+}
+
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-section);
+}
+
+.comand-team{
+    font-weight: 700;
+    font-size: 36px;
+    transition: font-size 0.4s ease;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.comand-team:hover {
+    font-size: 40px;
+    letter-spacing: 0.046em;
+}
+.comand-lists {
+    display: flex;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.workk-itemm {
+    margin-right: 30px;
+    background-color: var(--accent-color);
+}
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+}
+
+.team-job {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.blue-Web {
+    color: var(--additional-accent);
+}
+
+.easy-boom {
+    margin-top: 20px;
+}
+.footer-mailtro {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.footer-mailtro:last-child {
+    margin-bottom: 0;
+}
+.footer-cont {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--text-color);
+    
+}
+
+.footer-address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--accent-color);
+}
+.easy-boom {
+    margin-left: 30px;
+    transition: margin-left 0.3s ease;
+}
+
+.logo {
+    margin-left: 15px;
+}
+  
+.easy-boom:hover {
+    margin-left: 40px;
+}

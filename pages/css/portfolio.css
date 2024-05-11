@@ -1,0 +1,270 @@
+:root {
+    --backgroung-color: #FFF;
+    --accent-color:  #FFFFFF;
+    --additional-accent: #2196F3;
+    --text-color: #757575;
+    --footer: #2F303A;
+    --background-section: #F5F4FA;
+    --head-text: #212121;
+    --web-studio: #000000; 
+}
+
+body {
+    font-family: 'Roboto';
+    color: var(--head-text);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+  
+header {
+  border-bottom: 2px solid #ECECEC;
+  gap: 94px;
+}
+
+.header .container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;  
+}
+.nav{
+    display: flex;
+}
+
+.logo-blue {
+    color: var(--additional-accent);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--body-text-color);
+}
+.ul-list {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.ul-easy {
+    margin-right: 50px;
+}
+  
+.ul-easy:last-child{
+    margin-right: 0;
+}
+
+.give-me-a-fire {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--head-text);
+}
+  
+.give-me-a-fire:hover,
+.give-me-a-fire:focus {
+    color: var(--additional-accent);
+}
+
+.freedom {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.memories:first-child {
+    margin-right: 50px;
+}
+.baraban {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.baraban:hover,
+.baraban:focus {
+    color: var(--additional-accent);
+}
+
+.main-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+}
+
+.btn-item {
+    margin-right: 8px;
+}
+.button-item {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--head-text);
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+}
+
+.button-item:hover,
+.button-item:focus {
+  color: var(--accent-color);
+  background-color: var(--additional-accent);
+  border-radius: 4px;
+}
+
+.b {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.card-item:nth-child(3n) {
+    margin-right: 0;
+}
+    
+.card-item:nth-child(7) {
+    margin-bottom: 0;
+}
+    
+.card-item:nth-child(8) {
+    margin-bottom: 0;
+}
+    
+.card-item:nth-child(9) {
+    margin-bottom: 0;
+}
+.card-item div{
+    padding: 20px 24px;  
+}
+
+.card-frame {
+    border-left: 1px solid
+  #EEEEEE;
+    border-right: 1px solid 
+  #EEEEEE;
+    border-bottom: 1px solid 
+  #EEEEEE;
+    
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--head-text);
+}
+
+.card-description {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+    color: var(--link-color);
+}
+
+footer {
+    background-color: var(--footer);
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-top: 94px;
+}
+
+.webstudio {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.webcolor {
+    color: var(--additional-accent);
+}
+
+.bomba {
+    margin-top: 20px;
+}
+
+.firelove {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.bmw {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.60);
+}  
+
+.mercedes {
+    color: var(--backgroung-color);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    list-style: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.domino {
+    margin-left: 40px;
+    display: flex;
+}
+
+.webstudio {
+    margin-left: 20px;
+}
+
+.domino {
+    justify-content: center;
+    align-items: center;
+}
+
+.firelove {
+    margin-right: 50px;
+    margin-top: -65px;
+}

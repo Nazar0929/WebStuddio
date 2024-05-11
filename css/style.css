@@ -44,8 +44,6 @@ h1, h2, h3, p, ul{
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 .header .container {
     display: flex;
@@ -220,6 +218,35 @@ h1, h2, h3, p, ul{
     padding-bottom: 94px;
 }
 
+.color-change {
+    cursor: pointer;
+    margin-left: 635px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.08;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 0px;
+    transition: border-radius 0.4s ease;
+    background-color: var(--additional-accent);
+    color: var(--accent-color);
+    padding: 10px 32px;
+}
+    
+.color-change:hover,
+.color-change:focus {
+    border-radius: 7px;
+    background-color: var(--text-color);
+    color: var(--accent-color) 
+}
+
+.color-change:focus +
+.texxt {
+    color: #2196F3;
+    background-color: #000000;
+}
+
 .work-item {
     font-weight: 700;
     font-size: 36px;
@@ -237,6 +264,33 @@ h1, h2, h3, p, ul{
     margin-right: 90px;
 }
 
+.first {
+    margin-top: 0px;
+    transition: margin-top 0.4s ease;
+}
+
+
+.first:hover {
+    margin-top: 20px;
+}
+
+.second {
+    margin-top: 0px;
+    transition: margin-top 0.4s ease;
+}
+
+.second:hover {
+    margin-top: 20px;
+}
+
+.third {
+    margin-top: 0px;
+    transition: margin-top 0.4s ease;
+}
+
+.third:hover {
+    margin-top: 20px;
+}
 
 .people {
     margin-left: auto;
@@ -259,7 +313,7 @@ h1, h2, h3, p, ul{
 }
 .comand-team:hover {
     font-size: 40px;
-    letter-spacing: 0.046em;
+    letter-spacing: 0.06em;
 }
 .comand-lists {
     display: flex;

@@ -58,6 +58,8 @@ h1, h2, h3, p, ul{
 
 .logo-span {
     color: var(--href-moments);
+    margin-left: 0%;
+    transition: margin-left 0.4s ease;
 }
 
 .logos {
@@ -67,6 +69,16 @@ h1, h2, h3, p, ul{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--web-studio);
+    margin-right: 0px;
+    transition: margin-right 0.4s ease;
+}
+
+.logos:hover {
+    margin-right: 20px;
+}
+
+.logo-span:hover {
+    margin-left: -10px;
 }
 
 .header-list {
@@ -94,12 +106,17 @@ h1, h2, h3, p, ul{
 
 .nav-link {
     color: var(--head-text);
+    transition: font-size 0.4s ease;
+
 }
 
   
 .nav-link:hover,
 .nav-link:focus {
     color: var(--href-moments);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .list-description {
@@ -212,6 +229,8 @@ h1, h2, h3, p, ul{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    font-size: 14px;
+    transition: font-size 0.4s ease;
 }
  
 .yes {
@@ -232,19 +251,17 @@ h1, h2, h3, p, ul{
     background-color: var(--additional-accent);
     color: var(--accent-color);
     padding: 10px 32px;
+    margin-top: 30px;
 }
     
 .color-change:hover,
 .color-change:focus {
-    border-radius: 7px;
-    background-color: var(--text-color);
-    color: var(--accent-color) 
+border-radius: 7px;
+background-color: var(--text-color);
+color: var(--accent-color) ;
+.descript-text {
+    font-size: 20px;
 }
-
-.color-change:focus +
-.texxt {
-    color: #2196F3;
-    background-color: #000000;
 }
 
 .work-item {
@@ -326,7 +343,17 @@ h1, h2, h3, p, ul{
 .workk-itemm {
     margin-right: 30px;
     background-color: var(--accent-color);
+    margin-top: 0px;
+    transition: margin-top 0.4s ease;
 }
+.workk-itemm:hover {
+margin-top: 23px;
+.team-name {
+    font-size: 20px;
+    transition: font-size 0.5s ease
+}
+}
+
 .team-card {
     padding-top: 30px;
     padding-bottom: 30px;

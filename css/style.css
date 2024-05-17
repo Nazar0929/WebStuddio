@@ -165,7 +165,7 @@ h1, h2, h3, p, ul{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--footer);
+    background-image: url('../images/photohero.jpg');
 }
 
 .button-main {

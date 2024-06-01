@@ -41,7 +41,7 @@ h1, h2, h3, p, ul{
   }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -192,7 +192,7 @@ h1, h2, h3, p, ul{
 .main-text {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
+}
 
 .description-texxt {
     display: none;
@@ -207,6 +207,12 @@ h1, h2, h3, p, ul{
     margin-right: 30px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.cont {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-item:last-child {
@@ -235,6 +241,12 @@ h1, h2, h3, p, ul{
  
 .yes {
     padding-bottom: 94px;
+}
+
+.conta {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .color-change {
@@ -272,13 +284,14 @@ color: var(--accent-color) ;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+    margin-right: 35px;
 }
 .work-item:hover {
     font-size: 40px;
 }
 .workk {
     display: flex;
-    margin-right: 90px;
+    justify-content: center;
 }
 
 .first {
@@ -310,7 +323,7 @@ color: var(--accent-color) ;
 }
 
 .people {
-    margin-left: auto;
+    margin-right: 30px;
 }
 
 .team-section {
@@ -318,6 +331,9 @@ color: var(--accent-color) ;
     padding-bottom: 94px;
     background-color: var(--background-section);
 }
+
+
+
 
 .comand-team{
     font-weight: 700;

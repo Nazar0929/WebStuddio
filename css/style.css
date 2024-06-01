@@ -104,19 +104,23 @@ h1, h2, h3, p, ul{
     color: var(--head-text);
 }
 
+.list-caption:active {
+    color: var(--additional-accent);
+}
+
 .nav-link {
     color: var(--head-text);
-    transition: font-size 0.4s ease;
 
 }
 
-  
 .nav-link:hover,
 .nav-link:focus {
     color: var(--href-moments);
-    font-size: 17px;
     font-weight: 700;
-    letter-spacing: 0.03em;
+}
+
+.nav-link:active {
+    color: var(--href-moments);
 }
 
 .list-description {
@@ -396,6 +400,13 @@ footer {
     background-color: var(--footer);
     padding-top: 60px;
     padding-bottom: 60px;
+    
+}
+
+.fot {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo {
     font-family: 'Raleway';
@@ -436,12 +447,7 @@ footer {
     color: var(--accent-color);
 }
 .easy-boom {
-    margin-left: 30px;
     transition: margin-left 0.3s ease;
-}
-
-.logo {
-    margin-left: 15px;
 }
   
 .easy-boom:hover {

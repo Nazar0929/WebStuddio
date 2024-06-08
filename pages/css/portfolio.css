@@ -67,12 +67,9 @@ header {
     display: flex;
     align-items: center;
     margin-left: 93px;
+    gap: 50px;
 }
 
-.ul-easy {
-    margin-right: 50px;
-}
-  
 .ul-easy:last-child{
     margin-right: 0;
 }
@@ -94,11 +91,9 @@ header {
     display: flex;
     align-items: center;
     margin-left: auto;
+    gap: 50px;
 }
 
-.memories:first-child {
-    margin-right: 50px;
-}
 .baraban {
     font-family: "Roboto";
     font-weight: 500;
@@ -121,12 +116,11 @@ header {
 .button-list {
     display: flex;
     justify-content: center;
-    margin-bottom: -50px;
+    margin-bottom: 50px;
+    gap: 8px;
 }
 
-.btn-item {
-    margin-right: 8px;
-}
+
 .button-item {
     font-family: 'Roboto';
     font-weight: 500;
@@ -152,27 +146,12 @@ header {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .card-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    gap: 30px;
 }
 
-.card-item:nth-child(3n) {
-    margin-right: 0;
-}
-    
-.card-item:nth-child(7) {
-    margin-bottom: 0;
-}
-    
-.card-item:nth-child(8) {
-    margin-bottom: 0;
-}
-    
-.card-item:nth-child(9) {
-    margin-bottom: 0;
-}
 .card-item div{
     padding: 20px 24px;  
 }
@@ -207,7 +186,6 @@ footer {
     background-color: var(--footer);
     padding-top: 60px;
     padding-bottom: 30px;
-    margin-top: 94px;
 }
 
 .webstudio {
@@ -248,10 +226,4 @@ footer {
     font-weight: 400;
     list-style: 1.71;
     letter-spacing: 0.42px;
-}
-
-.fot-mar {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }

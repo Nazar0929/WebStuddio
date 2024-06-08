@@ -38,7 +38,7 @@ h1, h2, h3, p, ul{
 
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -225,6 +225,8 @@ h1, h2, h3, p, ul{
     transition: font-size 0.4s ease;
     line-height: 1.14;
     margin-bottom: 10px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 .texxt:hover {
     font-size: 16px;
@@ -263,9 +265,13 @@ h1, h2, h3, p, ul{
     gap: 30px;
 }
 
+.works{
+    flex-basis: calc((100%-60px)/3);
+}
+
 .moderning {
-    margin-top: 0px;
     transition: margin-top 0.4s ease;
+    width: 100%;
 }
 
 

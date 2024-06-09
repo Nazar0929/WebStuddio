@@ -210,6 +210,10 @@ footer {
     margin-bottom: 9px;
 }
 
+.firelove:last-child{
+    margin-bottom: 0px;
+}
+
 .bmw {
     font-size: 14px;
     line-height: 1.71;

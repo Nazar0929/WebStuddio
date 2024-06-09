@@ -205,7 +205,9 @@ h1, h2, h3, p, ul{
     gap: 30px;
 }
 
-
+.main-item{
+    width: 270px;
+}
 
 .main-item:last-child {
     margin-right: 0;

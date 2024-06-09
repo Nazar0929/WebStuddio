@@ -211,6 +211,17 @@ h1, h2, h3, p, ul{
     margin-right: 0;
 }
 
+.benefits-icon {
+    max-width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
 .texxt {
     font-weight: 700;
     font-size: 14px;
@@ -258,7 +269,8 @@ h1, h2, h3, p, ul{
 }
 
 .works{
-    flex-basis: calc((100%-60px)/3);
+    gap: 30px;
+    position: relative;
 }
 
 .moderning {
@@ -271,6 +283,28 @@ h1, h2, h3, p, ul{
     margin-top: 20px;
 }
 
+.work-text-posicion {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.work-texttt {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+  
 
 .team-section {
     padding-top: 94px;

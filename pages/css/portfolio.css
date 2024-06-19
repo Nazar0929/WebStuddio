@@ -23,6 +23,11 @@ ul {
     list-style: none;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 h1, h2, h3, p, ul{
     margin: 0;
     padding: 0;
@@ -149,7 +154,7 @@ header {
     gap: 30px;
 }
 .card-item {
-    gap: 30px;
+    flex-basis: calc((100%-60px) / 3);
 }
 
 .card-item div{

@@ -205,23 +205,62 @@ h1, h2, h3, p, ul{
     gap: 30px;
 }
 
-.main-item{
+
+
+.main-item:before {
+    content: "";
     width: 270px;
-}
-
-.main-item:last-child {
-    margin-right: 0;
-}
-
-.benefits-icon {
-    max-width: 270px;
     height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    background: #F5F4FA;
+    background-image: url(../images/icon-antena.png);
+    display: block;
     border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.main-item:nth-child(2)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-clock.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.main-item:nth-child(3)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-diagram.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.main-item:nth-child(4)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-astronaut.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
 }
 
 .texxt {

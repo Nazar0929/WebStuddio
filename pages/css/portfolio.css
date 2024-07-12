@@ -145,6 +145,7 @@ header {
   color: var(--accent-color);
   background-color: var(--additional-accent);
   border-radius: 4px;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .b {
@@ -155,6 +156,10 @@ header {
 }
 .card-item {
     flex-basis: calc((100% - 60px) /3 );
+}
+
+.card-item:hover {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .card-item div{

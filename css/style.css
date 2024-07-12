@@ -205,8 +205,6 @@ h1, h2, h3, p, ul{
     gap: 30px;
 }
 
-
-
 .main-item:before {
     content: "";
     width: 270px;
@@ -374,6 +372,7 @@ h1, h2, h3, p, ul{
 .workk-itemm {
     background-color: var(--accent-color);
     transition: margin-top 0.4s ease;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 .workk-itemm:hover {
 margin-top: 23px;

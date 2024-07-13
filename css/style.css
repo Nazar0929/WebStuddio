@@ -146,6 +146,7 @@ h1, h2, h3, p, ul{
   color: var(--href-moments);
 }
 
+
 .section-hero {
     text-align: center;
     padding-top: 200px;
@@ -189,7 +190,6 @@ h1, h2, h3, p, ul{
 
 .button-main:hover,
 .button-main:focus {
-    border-radius: 15px;
   background-color: var(--accent-color);
   color: var(--additional-accent) 
 }

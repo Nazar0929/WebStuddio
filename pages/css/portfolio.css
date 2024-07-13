@@ -92,6 +92,10 @@ header {
     color: var(--additional-accent);
 }
 
+.active {
+    color: var(--additional-accent);
+}
+
 .freedom {
     display: flex;
     align-items: center;

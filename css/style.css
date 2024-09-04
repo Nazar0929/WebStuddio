@@ -11,6 +11,7 @@
     --head-text: #212121;
     --href-moments: #2196F3;
     --web-studio: #000000; 
+    --social-networks: #AFB1B8;
 }
 
 body {
@@ -81,13 +82,7 @@ h1, h2, h3, p, ul{
     margin-right: 93px;
 }
 
-.logos:hover {
-    margin-right: 20px;
-}
 
-.logo-span:hover {
-    margin-left: -10px;
-}
 
 .header-nav{
     display: flex;
@@ -137,6 +132,18 @@ h1, h2, h3, p, ul{
     gap: 50px;
 }
 
+.logo-email {
+    fill: var(--text-color);
+    width: 16px;
+    height: 12px;
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .header-contact {
     font-weight: 500;
     font-size: 14px;
@@ -148,8 +155,18 @@ h1, h2, h3, p, ul{
 .header-contact:hover,
 .header-contact:focus {
   color: var(--href-moments);
+.logo-email {
+    fill: var(--additional-accent);
+    width: 16px;
+    height: 12px;
+}
 }
 
+.logo-phone {
+    fill: var(--text-color);
+    width: 10px;
+    height: 16px;
+}
 
 .section-hero {
     text-align: center;
@@ -321,13 +338,7 @@ h1, h2, h3, p, ul{
 }
 
 .moderning {
-    transition: margin-top 0.4s ease;
     width: 100%;
-}
-
-
-.moderning:hover {
-    margin-top: 20px;
 }
 
 .work-text-posicion {
@@ -383,13 +394,6 @@ h1, h2, h3, p, ul{
     transition: margin-top 0.4s ease;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
-.workk-itemm:hover {
-margin-top: 23px;
-.team-name {
-    font-size: 20px;
-    transition: font-size 0.5s ease
-}
-}
 
 
 .team-card {
@@ -413,6 +417,121 @@ margin-top: 23px;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
+.social-flex {
+    margin-top: 16px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.icon-button_icon {
+    height: 20px;
+    width: 20px;
+    fill: var(--social-networks);
+}
+
+
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.35em;
+    border-radius: 50%;
+    &:not(.icon-button) {
+        min-width: 10ch;
+        min-height: 44px;
+        padding: 0.25em 0.75em;
+      }
+    
+      &:hover {
+        
+.icon-button_icon {
+    height: 20px;
+    width: 20px;
+    fill: var(--accent-color);
+}
+        background-color: var(--additional-accent); /* Измените цвет кнопки при ховере */
+        color: #fff; /* Измените цвет текста или иконки внутри кнопки при ховере */
+      }
+    }
+
+.button {
+    &:not(.icon-button) {
+      min-width: 10ch;
+      min-height: 44px;
+      padding: 0.25em 0.75em;
+    }
+  }
+
+.section-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--accent-color);
+}
+
+.customers-text {
+    text-align: center;
+}
+
+
+.list-svg {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    fill: var(--social-networks);
+}
+
+
+
+
+
+
+
+
+.customers-svg {
+    flex-shrink: 0;
+    width: 170px;
+    height: 90px;
+    fill: var(--social-networks);
+}
+
+.icon-buttonn {
+    border: 1px solid var(--social-networks);
+    width: 170px;
+    height: 90px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.icon-buttonn:hover {
+    border: 1px solid var(--additional-accent);
+}
+    
+        
+.customers-svg:hover {
+    flex-shrink: 0;
+    fill: var(--additional-accent);
+}
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: var(--footer);
@@ -438,13 +557,6 @@ footer {
     margin-top: 20px;
 }
 
-.easy-boom {
-    transition: margin-left 0.3s ease;
-}
-  
-.easy-boom:hover {
-    margin-left: 40px;
-}
 
 .footer-mailtro {
     margin-top: 9px;

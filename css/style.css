@@ -187,7 +187,7 @@ h1, h2, h3, p, ul{
     color: var(--accent-color);
 }
 .main-hero:hover {
-    color:#757575
+    color: var(--text-color)
 
 }
 
@@ -357,7 +357,7 @@ h1, h2, h3, p, ul{
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--accent-color)
 }
   
 
@@ -437,8 +437,8 @@ h1, h2, h3, p, ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 44px;
+    height: 44px;
     padding: 0.35em;
     border-radius: 50%;   
       &:hover {
@@ -592,8 +592,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 44px;
+    height: 44px;
     padding: 0.35em;
     border-radius: 50%; 
 }
@@ -659,6 +659,7 @@ footer {
     background: rgba(33, 150, 243, 0.00);
     border: none;
 }
+
 
 .button-link {
     margin-left: 12px;

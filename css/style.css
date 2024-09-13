@@ -154,6 +154,7 @@ h1, h2, h3, p, ul{
 
 }
 
+
 .header-contact:hover,
 .header-contact:focus {
   color: var(--href-moments);
@@ -433,41 +434,34 @@ h1, h2, h3, p, ul{
 
 
 
-.icon-button_icon {
-    height: 20px;
-    width: 20px;
-    fill: var(--social-networks);
-}
-
-
-
 .icon-button {
+    background-color: var(--networks-background);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     padding: 0.35em;
-    border-radius: 50%;   
-      &:hover {
-        
-.icon-button_icon {
-    height: 20px;
-    width: 20px;
-    fill: var(--accent-color);
+    border-radius: 50%; 
+
+    .icon-button_icon {
+        height: 20px;
+        width: 20px;
+        fill: var(--social-networks);
+    }
 }
-        background-color: var(--additional-accent); /* Измените цвет кнопки при ховере */
-        color: #fff; /* Измените цвет текста или иконки внутри кнопки при ховере */
-      }
+
+.icon-button:hover,
+.icon-button:focus {
+    background-color: var(--additional-accent);
+    .icon-button_icon {
+        height: 20px;
+        width: 20px;
+        fill: var(--accent-color);
     }
 
-.button {
-    &:not(.icon-button) {
-      min-width: 10ch;
-      min-height: 44px;
-      padding: 0.25em 0.75em;
-    }
-  }
+}
+
 
 .section-customers {
     padding-top: 94px;
@@ -491,19 +485,17 @@ h1, h2, h3, p, ul{
 
 
 
-
-
-
-
-
 .customers-svg {
     flex-shrink: 0;
     width: 170px;
     height: 90px;
-    fill: var(--social-networks);
+
 }
 
+
+
 .icon-buttonn {
+    fill: var(--social-networks);
     border: 1px solid var(--social-networks);
     width: 170px;
     height: 90px;
@@ -514,23 +506,12 @@ h1, h2, h3, p, ul{
     border-radius: 4px;
 }
 
-.icon-buttonn:hover {
+.icon-buttonn:hover,
+.icon-buttonn:focus {
     border: 1px solid var(--additional-accent);
-}
-    
-        
-.customers-svg:hover {
-    flex-shrink: 0;
     fill: var(--additional-accent);
 }
-
-
-
-
-
-
-
-
+    
 
 
 footer {
@@ -606,7 +587,8 @@ footer {
     border-radius: 50%; 
 }
 
-.icon-buttont:hover {
+.icon-buttont:hover,
+.icon-buttont:focus {
     background-color: var(--additional-accent);
 }
 .icon-online {

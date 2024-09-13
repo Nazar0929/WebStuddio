@@ -133,6 +133,7 @@ h1, h2, h3, p, ul{
     fill: var(--text-color);
     width: 16px;
     height: 12px;
+
 }
 
 .contact-text {
@@ -142,11 +143,15 @@ h1, h2, h3, p, ul{
 }
 
 .header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+
 }
 
 .header-contact:hover,
@@ -156,6 +161,9 @@ h1, h2, h3, p, ul{
     fill: var(--additional-accent);
     width: 16px;
     height: 12px;
+}
+.logo-phone {
+    fill: var(--additional-accent);
 }
 }
 

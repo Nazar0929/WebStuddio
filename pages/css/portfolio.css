@@ -268,6 +268,10 @@ footer {
     display: flex;
 }
 
+.list-footer {
+    width: 231px;
+}
+
 .footer-logo {
     margin-bottom: 20px;
 }
@@ -368,7 +372,7 @@ footer {
     padding-left: 16px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-right: 158px;
+    padding-right: 162px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);

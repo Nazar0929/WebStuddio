@@ -453,8 +453,11 @@ h1, h2, h3, p, ul{
 
 .icon-button:hover,
 .icon-button:focus {
+    border: none;
+    outline: 0px solid var(--additional-accent);
     background-color: var(--additional-accent);
     .icon-button_icon {
+        border: none;
         height: 20px;
         width: 20px;
         fill: var(--accent-color);
@@ -508,8 +511,9 @@ h1, h2, h3, p, ul{
 
 .icon-buttonn:hover,
 .icon-buttonn:focus {
-    border: 1px solid var(--additional-accent);
+    border: none;
     fill: var(--additional-accent);
+    outline: 1px solid var(--additional-accent);
 }
     
 
@@ -593,6 +597,8 @@ footer {
 
 .icon-buttont:hover,
 .icon-buttont:focus {
+    border: none;
+    outline: 0px solid var(--additional-accent);
     background-color: var(--additional-accent);
 }
 .icon-online {

@@ -874,6 +874,11 @@ footer>.container {
     margin-left: 124px;
     margin-right: 124px;
 }
+.modal-button:hover,
+.modal-button:focus {
+    border: none;
+    outline: 0px solid red;
+}
 
 .button-closee {
     position: absolute;

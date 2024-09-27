@@ -474,6 +474,12 @@ h1, h2, h3, p, ul{
 
 .customers-text {
     text-align: center;
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
 }
 
 
@@ -657,10 +663,9 @@ footer>.container {
 }
 
 .input {
+    width: 363px;
+    height: 50px;
     padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 162px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);

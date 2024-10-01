@@ -118,10 +118,6 @@ h1, h2, h3, p, ul{
     font-weight: 700;
 }
 
-.nav-link:active {
-    color: var(--href-moments);
-}
-
 .active {
     color: var(--additional-accent);
 }
@@ -136,6 +132,13 @@ h1, h2, h3, p, ul{
     margin-top: 0px;
     position: absolute;
     margin-top: 28px;
+    transition: 0.3s ease;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1);
+}
+
+.active:focus::after {
+    transform: scaleX(1);  
 }
 
 .list-description {
@@ -736,7 +739,9 @@ footer>.container {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
 
  .is-hidden {
     opacity: 0;
@@ -744,6 +749,8 @@ footer>.container {
  }
 
  .modal {
+    transform: scale(0.7);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     padding: 40px;
     transform: translate(-50%, -50%);

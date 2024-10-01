@@ -115,10 +115,17 @@ header {
     background-color: var(--additional-accent);
     border-radius: 2px;
     display: block;
+    margin-top: 0px;
     position: absolute;
     margin-top: 28px;
+    transition: 0.3s ease;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1);
 }
 
+.active:focus::after {
+    transform: scaleX(1);  
+}
 
 
 .freedom {
@@ -227,12 +234,16 @@ header {
     overflow: hidden;
 }
 
-.card-photo:hover {
+.card-item:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     .card-text {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.photo-item {
+    display: block;
 }
 
 .card-frame{
@@ -256,8 +267,9 @@ header {
     top: 0;
     left: 0;
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(100%);
     transition: transform 0.8s ease;
+    z-index: 1;
 }
 
 

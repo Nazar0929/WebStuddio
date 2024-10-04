@@ -509,27 +509,16 @@ h1, h2, h3, p, ul{
     fill: var(--social-networks);
 }
 
-
-
-.customers-svg {
-    flex-shrink: 0;
-    width: 170px;
-    height: 90px;
-
-}
-
-
-
 .icon-buttonn {
     fill: var(--social-networks);
     border: 1px solid var(--social-networks);
     width: 170px;
-    height: 90px;
-    flex-shrink: 0;
+    height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .icon-buttonn:hover,
@@ -538,7 +527,13 @@ h1, h2, h3, p, ul{
     fill: var(--additional-accent);
     outline: 1px solid var(--additional-accent);
 }
-    
+
+.customers-svg {
+    width: 106px;
+    height: 60px;
+}
+
+
 
 
 footer {

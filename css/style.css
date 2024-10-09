@@ -109,6 +109,9 @@ h1, h2, h3, p, ul{
 
 .nav-link {
     color: var(--head-text);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -137,9 +140,11 @@ h1, h2, h3, p, ul{
     transform: scaleX(1);
 }
 
-.active:focus::after {
-    transform: scaleX(1);  
+.active:hover::after {
+    transform: scaleX(0);
 }
+
+
 
 .list-description {
     display: flex;
@@ -150,6 +155,9 @@ h1, h2, h3, p, ul{
     fill: var(--text-color);
     width: 16px;
     height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -168,7 +176,9 @@ h1, h2, h3, p, ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -182,6 +192,9 @@ h1, h2, h3, p, ul{
 }
 .logo-phone {
     fill: var(--additional-accent);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
@@ -211,6 +224,9 @@ h1, h2, h3, p, ul{
     text-transform: uppercase;
     margin-bottom: 30px;
     color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-hero:hover {
     color: var(--text-color)
@@ -231,6 +247,9 @@ h1, h2, h3, p, ul{
     color: var(--accent-color);
     padding: 10px 32px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-main:hover,
@@ -460,11 +479,17 @@ h1, h2, h3, p, ul{
     height: 44px;
     padding: 0.35em;
     border-radius: 50%; 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     .icon-button_icon {
         height: 20px;
         width: 20px;
         fill: var(--social-networks);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -519,6 +544,11 @@ h1, h2, h3, p, ul{
     align-items: center;
     border-radius: 4px;
     flex-shrink: 0;
+    border: none;
+    outline: 1px solid var(--social-networks);
+    transition-property: fill, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-buttonn:hover,
@@ -614,6 +644,9 @@ footer>.container {
     height: 44px;
     padding: 0.35em;
     border-radius: 50%; 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-buttont:hover,
@@ -790,8 +823,12 @@ footer>.container {
     width: 448px;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
+    outline: 1px solid rgba(33, 33, 33, 0.20);
+    border: none;
     fill: #000000;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .input-modal:hover, 
@@ -815,6 +852,9 @@ footer>.container {
     left: 12px;
     width: 18px;
     height: 18px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .label-comment {
@@ -837,13 +877,18 @@ footer>.container {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    border-radius: 4px;
+    border: none;
+    outline: 1px solid var(--social-networks);
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-comment:hover,
 .text-comment:focus {
     border: none;
     outline: 1px solid var(--additional-accent);
-    padding: 13px 17px;
 }
 
 .label-wrapper {
@@ -854,10 +899,14 @@ footer>.container {
     gap: 8px;
 }
 
+
+
 .input-box {
     width: 16px;
     height: 15px;
-
+    transition-property: width, height;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-checked {
@@ -894,11 +943,15 @@ footer>.container {
     margin-top: 30px;
     margin-left: 124px;
     margin-right: 124px;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus {
     border: none;
     outline: 0px solid red;
+    background: var(--text-color)
 }
 
 .button-closee {
@@ -911,7 +964,11 @@ footer>.container {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: none;
+    outline: 1px solid grey;
+    transition-property: fill, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 

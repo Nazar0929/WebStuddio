@@ -97,6 +97,9 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--head-text);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .give-me-a-fire:hover,
@@ -123,9 +126,10 @@ header {
     transform: scaleX(1);
 }
 
-.active:focus::after {
-    transform: scaleX(1);  
+.active:hover::after {
+    transform: scaleX(0);
 }
+
 
 
 .freedom {
@@ -139,6 +143,9 @@ header {
     fill: var(--text-color);
     width: 16px;
     height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -147,7 +154,6 @@ header {
     align-items: center;
     gap: 10px;
 }
-
 .header-contact {
     display: flex;
     align-items: center;
@@ -157,15 +163,10 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.logo-phone {
-    fill: var(--text-color);
-    width: 10px;
-    height: 16px;
-}
-
 
 
 .header-contact:hover,
@@ -178,7 +179,16 @@ header {
 }
 .logo-phone {
     fill: var(--additional-accent);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
+.logo-phone {
+    fill: var(--text-color);
+    width: 10px;
+    height: 16px;
 }
 
 
@@ -207,6 +217,9 @@ header {
     border: none;
     cursor: pointer;
     padding: 6px 22px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-item:hover,
@@ -227,6 +240,9 @@ header {
 }
 .card-item {
     flex-basis: calc((100% - 60px) /3 );
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-photo {
@@ -380,6 +396,9 @@ footer {
     height: 44px;
     padding: 0.35em;
     border-radius: 50%; 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-buttont:hover,

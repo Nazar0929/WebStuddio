@@ -49,8 +49,16 @@ h1, h2, h3, p, ul{
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
+
+.container.element-show {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
 
 .header-box {
     display: flex;
@@ -68,6 +76,19 @@ h1, h2, h3, p, ul{
 
 .logo-span {
     color: var(--href-moments);
+    animation: textColorChange 3s infinite;
+}
+
+@keyframes textColorChange {
+    0% {
+        color: var(--href-moments); 
+    }
+    50% {
+        color: var(--head-text); 
+    }
+    100% {
+        color:  var(--href-moments); 
+    }
 }
 
 .logos {
@@ -80,6 +101,24 @@ h1, h2, h3, p, ul{
     margin-right: 0px;
     transition: margin-right 0.4s ease;
     margin-right: 93px;
+
+}
+
+@keyframes textColorChangee {
+    0% {
+        color: var(--head-text);
+    }
+    50% {
+        color: var(--href-moments); 
+    }
+    100% {
+        color:  var(--head-text); 
+    }
+}
+
+.studio {
+    animation: textColorChangee 3s infinite; 
+    color: var(--head-text);
 }
 
 .header-nav{
@@ -165,6 +204,56 @@ h1, h2, h3, p, ul{
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
+}
+
+.gaga::after {
+    content: "";
+    width: 135px;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    display: block;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 28px;
+    animation: underline-animation 3s infinite;
+}
+@keyframes underline-animation {
+    0% {
+        background-color: var(--accent-color); 
+    }
+    50% {
+        background-color: var(--text-color); 
+    }
+    100% {
+        background-color:var(--accent-color); 
+    }
+}
+
+.gag::after {
+    content: "";
+    width: 122px;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    display: block;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 28px;
+    animation: underline-animation 3s infinite; 
+}
+
+@keyframes underline-animation {
+    0% {
+        background-color: var(--accent-color); 
+    }
+    50% {
+        background-color: var(--text-color); 
+    }
+    100% {
+        background-color:var(--accent-color); 
+    }
 }
 
 .header-contact {
@@ -190,6 +279,15 @@ h1, h2, h3, p, ul{
     width: 16px;
     height: 12px;
 }
+
+
+
+
+
+
+
+
+
 .logo-phone {
     fill: var(--additional-accent);
     transition-property: fill;
@@ -213,6 +311,10 @@ h1, h2, h3, p, ul{
     background-position: center;
     background-size: cover;
 }
+
+
+
+
 .main-hero {
     max-width: 696px;
     margin:0 auto ;
@@ -227,10 +329,20 @@ h1, h2, h3, p, ul{
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: shadowChange 4s infinite alternate;
 }
 .main-hero:hover {
     color: var(--text-color)
 
+}
+
+@keyframes shadowChange {
+    0% {
+        text-shadow: 0 0 10px  #1E252B;
+    }
+    50% {
+        text-shadow: 0 0 8px #ffffff; 
+    }
 }
 
 
@@ -250,12 +362,22 @@ h1, h2, h3, p, ul{
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: breathing 3s infinite ease-in-out;
 }
 
 .button-main:hover,
 .button-main:focus {
   background-color: var(--accent-color);
   color: var(--additional-accent) 
+}
+
+@keyframes breathing {
+    0%, 100% {
+        width: 217px;
+    }
+    50% {
+        width: 250px;
+    }
 }
 
 .main-text {
@@ -328,6 +450,30 @@ h1, h2, h3, p, ul{
     margin-bottom: 30px;
 }
 
+/* Анимация плавного движения вверх и вниз */
+@keyframes floatVertical {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Подъем вверх */
+    }
+    100% {
+        transform: translateY(0); /* Возврат вниз */
+    }
+}
+
+/* Применение анимации для каждого элемента */
+.main-item::before {
+    animation: floatVertical 4s ease-in-out infinite; /* Длительность и плавность */
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Легкий фон */
+    border-radius: 10px; /* Сглаживание краев */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+
 .texxt {
     font-weight: 700;
     font-size: 14px;
@@ -378,6 +524,45 @@ h1, h2, h3, p, ul{
     gap: 30px;
     position: relative;
 }
+
+
+
+/* Анимация для левого элемента */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Анимация для правого элемента */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Анимация для центрального элемента */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 
 .moderning {
     width: 100%;
@@ -437,6 +622,37 @@ h1, h2, h3, p, ul{
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Поднимаем на 10px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Применение анимации ко всем элементам с классом 'item' */
+.workk-itemm {
+    animation: float 3s ease-in-out infinite; /* Плавание */
+    /* Чтобы сделать плавание менее монотонным, можно добавить небольшие временные изменения */
+    animation-delay: calc(0s + 0s);
+}
+
+.workk-itemm:nth-child(2) {
+    animation-delay: 0.4s; /* Задержка для второго элемента */
+}
+
+.workk-itemm:nth-child(3) {
+    animation-delay: 0.8s; /* Задержка для третьего элемента */
+}
+
+.workk-itemm:nth-child(4) {
+    animation-delay: 1.2s; /* Задержка для третьего элемента */
+}
 
 .team-card {
     padding-top: 30px;

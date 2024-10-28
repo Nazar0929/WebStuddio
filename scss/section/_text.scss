@@ -1,0 +1,116 @@
+
+.main-text {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.description-texxt {
+    display: none;
+}
+
+.text-item {
+    display: flex; 
+    gap: 30px;
+}
+
+.main-item:before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-antena.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.main-item:nth-child(2)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-clock.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.main-item:nth-child(3)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-diagram.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.main-item:nth-child(4)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/icon-astronaut.png);
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* Анимация плавного движения вверх и вниз */
+@keyframes floatVertical {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Подъем вверх */
+    }
+    100% {
+        transform: translateY(0); /* Возврат вниз */
+    }
+}
+
+/* Применение анимации для каждого элемента */
+.main-item::before {
+    animation: floatVertical 4s ease-in-out infinite; /* Длительность и плавность */
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Легкий фон */
+    border-radius: 10px; /* Сглаживание краев */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+
+.texxt {
+    font-weight: 700;
+    font-size: 14px;
+    transition: font-size 0.4s ease;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.texxt:hover {
+    font-size: 16px;
+}
+
+.descript-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    font-size: 14px;
+    transition: font-size 0.4s ease;
+}

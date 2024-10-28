@@ -1,0 +1,78 @@
+
+.section-hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(../images/photohero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.main-hero {
+    max-width: 696px;
+    margin:0 auto ;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: shadowChange 4s infinite alternate;
+}
+.main-hero:hover {
+    color: var(--text-color)
+
+}
+
+@keyframes shadowChange {
+    0% {
+        text-shadow: 0 0 10px  #1E252B;
+    }
+    50% {
+        text-shadow: 0 0 8px #ffffff; 
+    }
+}
+
+
+.button-main {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    transition: border-radius 0.4s ease;
+    background-color: var(--additional-accent);
+    color: var(--accent-color);
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: breathing 3s infinite ease-in-out;
+}
+
+.button-main:hover,
+.button-main:focus {
+  background-color: var(--accent-color);
+  color: var(--additional-accent) 
+}
+
+@keyframes breathing {
+    0%, 100% {
+        width: 217px;
+    }
+    50% {
+        width: 250px;
+    }
+}

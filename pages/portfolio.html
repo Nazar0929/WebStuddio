@@ -8,32 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="../style/main.min.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-        <a href="/index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
-        <nav class="nav">
-      <ul class="ul-list">
-        <li class="ul-easy"><a href="../index.html" class="give-me-a-fire">Студія</a></li>
-        <li class="ul-easy"><a href="../pages/portfolio.html" class="give-me-a-fire active">Портфоліо</a></li>
-        <li class="ul-easy"><a href="#"  class="give-me-a-fire activse">Контакти</a></li>
+        <div class="container header-box">
+        <a href="/index.html" class="logos"><span class="logo-span">Web</span><span class="studio">Studio</span></a>
+        <nav class="header-nav">
+      <ul class="header-list">
+        <li class="list-caption"><a href="../index.html" class="nav-link ">Студія</a></li>
+        <li class="list-caption"><a href="./pages/portfolio.html" class="nav-link active">Портфоліо</a></li>
+        <li class="list-caption"><a href="#" class="nav-link activse">Контакти </a></li>
       </ul>
         </nav>
-        <ul class="freedom">
-            <li class="contact-texts">
+        <ul class="list-description">
+            <li class="contact-text">
                 <a href="mailto:info@devstudio.com" class="header-contact">
                     <svg class="logo-email">
                         <use href="../images/symbol-defs.svg#icon-email"></use>
-                    </svg>info@devstudio.com
+                    </svg>
+                    <p class="gaga">info@devstudio.com</p>
                 </a>
             </li>
-            <li class="contact-texts">
+            <li class="contact-text">
                 <a href="tel:+380961111111" class="header-contact">
                     <svg class="logo-phone">
                         <use href="../images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a>
+                    </svg>
+                    <p class="gag">+38 096 111 11 11</p>
+                </a>
             </li>
         </ul>
     </div>
@@ -145,17 +148,20 @@
     </main>
     <footer>
         <div class="container">
-        <address class="easy-boom">
+        <div>
+            <address class="easy-boom">
         <ul class="list-footer">
-            <li class="footer-logo"><a href="/index.html" class="loggo"><span class="blue-Web">Web</span>Studio</a></li>
+            <li class="footer-logo"><a href="/index.html" class="logo"><span class="blue-Web">Web</span>Studio</a></li>
             <li class="footer-mailro"><a href="https://maps.app.goo.gl/3WHMfzr2wy2bExne6" target="_blank" class="footer-address">м. Київ, пр-т Лесі Українки, 26</a></li>
             <li class="footer-mailtro"><a href="mailto:info@devstudio.com" target="_blank" class="footer-cont">info@devstudio.com</a></li>
             <li class="footer-mailtro"><a href="tel:+380961111111" target="_blank" class="footer-cont">+38 096 111 11 11</a></li>
         </ul>
+        </address>
+        </div>
+        <div class="box-second">
+            <p class="text-join">приєднуйтесь</p>
         <ul class="list-join">
-            <li>
-                <p class="text-join">приєднуйтесь</p>
-                <div class="svg-flex">
+                <li class="svg-flex">
                 <a href="https://www.instagram.com/" class="icon-buttont" aria-label="Icon-only Button"> 
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -166,6 +172,8 @@
                         <use href="../images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                 </a>
+            </li>
+            <li class="svg-flex">
                 <a href="javascript:;" class="icon-buttont" aria-label="Icon-only Button"> 
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -176,6 +184,8 @@
                         <use href="../images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                 </a>
+            </li>
+            <li class="svg-flex">
                 <a href="javascript:;" class="icon-buttont" aria-label="Icon-only Button"> 
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -186,6 +196,8 @@
                         <use href="../images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                 </a>
+            </li>
+            <li class="svg-flex">
                 <a href="javascript:;" class="icon-buttont" aria-label="Icon-only Button"> 
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -196,20 +208,22 @@
                         <use href="../images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                 </a>
+            </li>
+            </ul>
             </div>
-            </li>
-            <li class="list-info">
+            <div class="box-form">
+            <form class="flex-button">
                 <p class="subscribe-link">Підпишіться на розсилку</p>
-                <div class="flex-button">
-                    <input type="email" id="email" class="input" placeholder="E-mail">
-                <button type="button" class="button-link">Підписатися <svg class="svg-telegram">
-                    <use href="../images/symbol-defs.svg#icon-iconsend"></use>
-                </svg></button>
-                </div>
-            </li>
-        </ul>
-        </address>
+                <div class="flex-form">
+                <input type="email" id="email" class="input" placeholder="E-mail" required>
+            <button type="submit" class="button-link">Підписатися <svg class="svg-telegram">
+                <use href="../images/symbol-defs.svg#icon-iconsend"></use>
+            </svg></button>
+            </div>
+            </form>
+        </div>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>

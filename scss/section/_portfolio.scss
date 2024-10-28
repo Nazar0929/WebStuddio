@@ -1,0 +1,134 @@
+
+
+
+.main-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
+
+
+.button-item {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--head-text);
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-item:hover,
+.button-item:focus {
+  color: var(--accent-color);
+  background-color: var(--additional-accent);
+  border-radius: 4px;
+  border: none;
+  outline: 0px solid var(--accent-color);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.b {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-item {
+    flex-basis: calc((100% - 60px) /3 );
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-item:hover {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.card-item:hover .card-text {
+    transform: translateY(0); /* Поднимаем текст вверх при наведении */
+    opacity: 1;
+}
+
+.photo-item {
+    display: block;
+}
+
+.card-frame{
+    padding: 20px 24px;  
+}
+
+.card-text {
+    width: 100%;
+    height: 295px;
+    color: var(--accent-color);
+    background: rgba(33, 150, 243, 0.90);
+    position: absolute;
+    padding: 63px 24px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.54px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-item:not(:hover) .card-text {
+    transform: translateY(100);
+    opacity: 1;
+}
+
+
+.card-frame {
+    border-left: 1px solid
+  #EEEEEE;
+    border-right: 1px solid 
+  #EEEEEE;
+    border-bottom: 1px solid 
+  #EEEEEE;
+    
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--head-text);
+}
+
+.card-description {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+    color: var(--link-color);
+}
+
+

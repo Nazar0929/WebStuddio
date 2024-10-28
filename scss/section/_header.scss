@@ -1,0 +1,245 @@
+
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+ 
+
+.header-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-link {
+    font-family: "Roboto", sans-serif;
+}
+.header-contact {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.logo-span {
+    color: var(--href-moments);
+    animation: textColorChange 3s infinite;
+}
+
+@keyframes textColorChange {
+    0% {
+        color: var(--href-moments); 
+    }
+    50% {
+        color: var(--head-text); 
+    }
+    100% {
+        color:  var(--href-moments); 
+    }
+}
+
+.logos {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--web-studio);
+    margin-right: 0px;
+    transition: margin-right 0.4s ease;
+    margin-right: 93px;
+
+}
+
+@keyframes textColorChangee {
+    0% {
+        color: var(--head-text);
+    }
+    50% {
+        color: var(--href-moments); 
+    }
+    100% {
+        color:  var(--head-text); 
+    }
+}
+
+.studio {
+    animation: textColorChangee 3s infinite; 
+    color: var(--head-text);
+}
+
+.header-nav{
+    display: flex;
+    margin-right: auto;
+}
+
+
+.header-list {
+    display: flex;
+    gap: 50px;
+}
+
+
+.list-caption{
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--head-text);
+}
+
+.list-caption:active {
+    color: var(--additional-accent);
+}
+
+.nav-link {
+    color: var(--head-text);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--href-moments);
+    font-weight: 700;
+}
+
+.active {
+    color: var(--additional-accent);
+}
+
+.active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--additional-accent);
+    border-radius: 2px;
+    display: block;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 28px;
+    transition: 0.3s ease;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(1);
+}
+
+.active:hover::after {
+    transform: scaleX(0);
+}
+
+
+
+.list-description {
+    display: flex;
+    gap: 50px;
+}
+
+.logo-email {
+    fill: var(--text-color);
+    width: 16px;
+    height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.gaga::after {
+    content: "";
+    width: 135px;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    display: block;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 28px;
+    animation: underline-animation 3s infinite;
+}
+@keyframes underline-animation {
+    0% {
+        background-color: var(--accent-color); 
+    }
+    50% {
+        background-color: var(--text-color); 
+    }
+    100% {
+        background-color:var(--accent-color); 
+    }
+}
+
+.gag::after {
+    content: "";
+    width: 122px;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    display: block;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 28px;
+    animation: underline-animation 3s infinite; 
+}
+
+@keyframes underline-animation {
+    0% {
+        background-color: var(--accent-color); 
+    }
+    50% {
+        background-color: var(--text-color); 
+    }
+    100% {
+        background-color:var(--accent-color); 
+    }
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--href-moments);
+.logo-email {
+    fill: var(--additional-accent);
+    width: 16px;
+    height: 12px;
+}
+
+
+.logo-phone {
+    fill: var(--additional-accent);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.logo-phone {
+    fill: var(--text-color);
+    width: 10px;
+    height: 16px;
+}

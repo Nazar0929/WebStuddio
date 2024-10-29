@@ -16,6 +16,37 @@
   })();
 
 
+console.log("Скрипт загружен"); // Проверка загрузки скрипта
+
+// Функция для проверки видимости элементов
+function handleScroll() {
+    const elements = document.querySelectorAll('.fade-in');
+
+    elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        // Проверка, виден ли элемент в области просмотра
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add('visible'); // Добавляем класс для плавного появления
+        }
+    });
+}
+
+// Добавляем обработчик события прокрутки
+window.addEventListener('scroll', handleScroll);
+
+// Вызываем функцию сразу, чтобы обработать элементы, которые могут быть видны изначально
+handleScroll();
+
+
+
+
+
+
+
+
+
+
+
 
 
 

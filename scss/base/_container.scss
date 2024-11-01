@@ -6,10 +6,11 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-
-}
-
-
-.container.visible {
-
-}
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+.container.element-show {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }

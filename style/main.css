@@ -20,11 +20,6 @@ h1, h2, h3, p, ul {
   padding: 0;
 }
 
-body {
-  font-family: "Roboto";
-  color: var(--head-text);
-}
-
 :root {
   --backgroung-color: #FFF;
   --accent-color: #FFFFFF;
@@ -33,10 +28,36 @@ body {
   --footer: #2F303A;
   --background-section: #F5F4FA;
   --head-text: #212121;
+  --btn-text: #212121;
   --href-moments: #2196F3;
   --web-studio: #000000;
   --social-networks: #AFB1B8;
+  --social-site: #AFB1B8;
+  --web-studio: #FFF;
   --networks-background: rgba(255, 255, 255, 0.10);
+}
+
+.darkstyle {
+  --backgroung-color: #000000;
+  --accent-color: #000000;
+  --additional-accent: #2196F3;
+  --text-color: #ffffff;
+  --footer: #0c0c0c;
+  --background-section: #151515;
+  --head-text: #ffffff;
+  --btn-text: #212121;
+  --href-moments: #2196F3;
+  --web-studio: #ffffff;
+  --social-networks: #ffffff;
+  --social-site: #000000;
+  --web-studio: #FFF;
+  --networks-background: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Roboto";
+  color: var(--head-text);
+  background-color: var(--background-color);
 }
 
 .container {
@@ -57,6 +78,7 @@ body {
 header {
   padding-top: 25px;
   padding-bottom: 25px;
+  background-color: var(--accent-color);
 }
 
 .header-box {
@@ -124,6 +146,7 @@ header {
 .header-list {
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 
 .list-caption {
@@ -165,7 +188,7 @@ header {
   display: block;
   margin-top: 0px;
   position: absolute;
-  margin-top: 28px;
+  margin-top: 33.5px;
   transition: 0.3s ease;
   transition-timing-function: ease-in-out;
   transform: scaleX(1);
@@ -173,6 +196,53 @@ header {
 
 .active:hover::after {
   transform: scaleX(0);
+}
+
+/* From Uiverse.io by Yaya12085 */
+.label {
+  margin-left: 50px;
+  height: 40px;
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: inset 0 0 5px 4px rgb(255, 255, 255), inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096), inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s;
+}
+
+.label:hover {
+  transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+}
+
+#checkbox:checked ~ .label:hover {
+  transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .label::before {
+  left: 70px;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+  transition: 0.4s;
+}
+
+.label::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #000000;
+  background-image: linear-gradient(130deg, #757272 10%, #ffffff 11%, #726f6f 62%);
+  left: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
 }
 
 .list-description {
@@ -205,7 +275,7 @@ header {
   display: block;
   margin-top: 0px;
   position: absolute;
-  margin-top: 28px;
+  margin-top: 33.5px;
   animation: underline-animation 3s infinite;
 }
 
@@ -229,7 +299,7 @@ header {
   display: block;
   margin-top: 0px;
   position: absolute;
-  margin-top: 28px;
+  margin-top: 33.5px;
   animation: underline-animation 3s infinite;
 }
 
@@ -290,6 +360,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: var(--accent-color);
 }
 
 .main-hero {
@@ -357,6 +428,7 @@ header {
 .main-text {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--accent-color);
 }
 
 .description-texxt {
@@ -471,6 +543,7 @@ header {
 
 .work-section {
   padding-bottom: 94px;
+  background-color: var(--accent-color);
 }
 
 .work-item {
@@ -550,7 +623,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: var(--web-studio);
 }
 
 .team-section {
@@ -663,7 +736,7 @@ header {
 .icon-button .icon-button_icon {
   height: 20px;
   width: 20px;
-  fill: var(--social-networks);
+  fill: var(--social-site);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -691,7 +764,7 @@ header {
 
 .customers-text {
   text-align: center;
-  color: #212121;
+  color: var(--head-text);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -754,7 +827,7 @@ footer > .container {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: var(--web-studio);
 }
 
 .blue-Web {
@@ -843,7 +916,7 @@ footer > .container {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  color: var(--accent-color);
+  color: var(--web-studio);
 }
 
 .list-info {
@@ -1139,6 +1212,7 @@ footer > .container {
   padding-top: 94px;
   padding-bottom: 94px;
   border-top: 1px solid #ECECEC;
+  background-color: var(--backgroung-color);
 }
 
 .button-list {
@@ -1154,7 +1228,7 @@ footer > .container {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: var(--head-text);
+  color: var(--btn-text);
   background-color: #f5f4fa;
   border-radius: 4px;
   border: none;

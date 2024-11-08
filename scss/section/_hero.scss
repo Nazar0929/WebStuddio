@@ -1,5 +1,5 @@
 
-.section-hero {
+.hero {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -8,12 +8,9 @@
     background-position: center;
     background-size: cover;
     background-color: var(--accent-color);
-}
 
-
-
-
-.main-hero {
+    
+&__main {
     max-width: 696px;
     margin:0 auto ;
     font-weight: 900;
@@ -28,11 +25,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation: shadowChange 4s infinite alternate;
-}
-.main-hero:hover {
-    color: var(--text-color)
 
-}
+    
 
 @keyframes shadowChange {
     0% {
@@ -43,8 +37,14 @@
     }
 }
 
+    &:hover {
+        color: var(--text-color)
+    
+    }
+}
 
-.button-main {
+
+&__order {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
@@ -61,10 +61,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation: breathing 3s infinite ease-in-out;
-}
 
-.button-main:hover,
-.button-main:focus {
+    &:hover,
+&:focus {
   background-color: var(--accent-color);
   color: var(--additional-accent) 
 }
@@ -77,3 +76,14 @@
         width: 250px;
     }
 }
+
+}
+
+}
+
+
+
+
+
+
+

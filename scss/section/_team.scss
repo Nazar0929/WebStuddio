@@ -1,74 +1,75 @@
 
 
-.team-section {
+.team {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--background-section);
-}
 
-.comand-team{
-    font-weight: 700;
-    font-size: 36px;
-    transition: font-size 0.4s ease;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-}
-.comand-team:hover {
-    font-size: 40px;
-    letter-spacing: 0.06em;
-}
-.comand-lists {
-    display: flex;
-    max-width: 1170px;
-    gap: 30px;
-}
-.workk-itemm {
-    border-radius: 0px 0px 4px 4px;
-    background-color: var(--accent-color);
-    transition: margin-top 0.4s ease;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-}
+    &__comand{
+        font-weight: 700;
+        font-size: 36px;
+        transition: font-size 0.4s ease;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
 
-
-@keyframes float {
-    0% {
-        transform: translateY(0);
+        &:hover {
+            font-size: 40px;
+            letter-spacing: 0.06em;
+        }
     }
-    50% {
-        transform: translateY(-10px); /* Поднимаем на 10px */
+
+    &__lists {
+        display: flex;
+        max-width: 1170px;
+        gap: 30px;
     }
-    100% {
-        transform: translateY(0);
-    }
+
+    &__work {
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--accent-color);
+        transition: margin-top 0.4s ease;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    
 }
 
-/* Применение анимации ко всем элементам с классом 'item' */
-.workk-itemm {
+&__work {
     animation: float 3s ease-in-out infinite; /* Плавание */
     /* Чтобы сделать плавание менее монотонным, можно добавить небольшие временные изменения */
     animation-delay: calc(0s + 0s);
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px); /* Поднимаем на 10px */
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
 }
 
-.workk-itemm:nth-child(2) {
+&__work:nth-child(2) {
     animation-delay: 0.4s; /* Задержка для второго элемента */
 }
 
-.workk-itemm:nth-child(3) {
+&__work:nth-child(3) {
     animation-delay: 0.8s; /* Задержка для третьего элемента */
 }
 
-.workk-itemm:nth-child(4) {
+&__work:nth-child(4) {
     animation-delay: 1.2s; /* Задержка для третьего элемента */
 }
 
-.team-card {
+&__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-name {
+&__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -77,15 +78,14 @@
     margin-bottom: 10px;
 }
 
-.team-job {
+&__job {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-
-.social-flex {
+&__flex {
     margin-top: 16px;
     gap: 10px;
     display: flex;
@@ -93,9 +93,7 @@
     justify-content: center;
 }
 
-
-
-.icon-button {
+&__button {
     background-color: var(--networks-background);
     display: flex;
     justify-content: center;
@@ -104,30 +102,28 @@
     height: 44px;
     padding: 0.35em;
     border-radius: 50%; 
-    transition-property: background-color;
+    transition-property: background-color, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    .icon-button_icon {
-        height: 20px;
-        width: 20px;
-        fill: var(--social-site);
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-}
-
-.icon-button:hover,
-.icon-button:focus {
+    
+&:hover,
+&:focus {
     border: none;
     outline: 0px solid var(--additional-accent);
     background-color: var(--additional-accent);
-    .icon-button_icon {
-        border: none;
-        height: 20px;
-        width: 20px;
+    .team__icon {
+        transform: scale(1.1);
         fill: var(--accent-color);
     }
 
+
 }
+}
+&__icon {
+    fill: var(--social-site);
+    width: 20px;
+    height: 20px;
+}
+}
+
+

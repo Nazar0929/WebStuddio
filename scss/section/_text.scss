@@ -1,20 +1,23 @@
 
-.main-text {
+.text {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--accent-color);
-}
 
-.description-texxt {
-    display: none;
-}
 
-.text-item {
-    display: flex; 
-    gap: 30px;
-}
+    &__description {
+        display: none;
+    }
+    
 
-.main-item:before {
+    &__item {
+        display: flex; 
+        gap: 30px;
+    }
+
+    
+
+&__main:before {
     content: "";
     width: 270px;
     height: 120px;
@@ -28,7 +31,7 @@
     margin-bottom: 30px;
 }
 
-.main-item:nth-child(2)::before {
+&__main:nth-child(2)::before {
     content: "";
     width: 270px;
     height: 120px;
@@ -42,7 +45,7 @@
     margin-bottom: 30px;
 }
 
-.main-item:nth-child(3)::before {
+&__main:nth-child(3)::before {
     content: "";
     width: 270px;
     height: 120px;
@@ -56,7 +59,8 @@
     margin-bottom: 30px;
 }
 
-.main-item:nth-child(4)::before {
+
+&__main:nth-child(4)::before {
     content: "";
     width: 270px;
     height: 120px;
@@ -70,31 +74,28 @@
     margin-bottom: 30px;
 }
 
-/* Анимация плавного движения вверх и вниз */
-@keyframes floatVertical {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px); /* Подъем вверх */
-    }
-    100% {
-        transform: translateY(0); /* Возврат вниз */
-    }
-}
-
-/* Применение анимации для каждого элемента */
-.main-item::before {
+&__main::before {
     animation: floatVertical 4s ease-in-out infinite; /* Длительность и плавность */
     display: inline-block;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Легкий фон */
     border-radius: 10px; /* Сглаживание краев */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+
+    @keyframes floatVertical {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px); /* Подъем вверх */
+        }
+        100% {
+            transform: translateY(0); /* Возврат вниз */
+        }
+    }
 }
 
-
-.texxt {
+&__head {
     font-weight: 700;
     font-size: 14px;
     transition: font-size 0.4s ease;
@@ -102,12 +103,14 @@
     margin-bottom: 10px;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-}
-.texxt:hover {
+
+    
+&:hover {
     font-size: 16px;
 }
+}
 
-.descript-text {
+&__caption {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -115,3 +118,13 @@
     font-size: 14px;
     transition: font-size 0.4s ease;
 }
+
+}
+
+
+
+
+
+
+
+

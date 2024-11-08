@@ -1,35 +1,33 @@
-.work-section {
+.work {
     padding-bottom: 94px;
     background-color: var(--accent-color);
-}
 
+    &__item {
+        font-weight: 700;
+        font-size: 36px;
+        transition: font-size 0.3s ease;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
 
-.work-item {
-    font-weight: 700;
-    font-size: 36px;
-    transition: font-size 0.3s ease;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
+        &:hover {
+            font-size: 40px;
+        }
+        
+    }
 
-}
-.work-item:hover {
-    font-size: 40px;
-}
+    &__text {
+        display: flex;
+        gap: 30px;
+    }
+    
 
-.text-workkk {
-    display: flex;
-    gap: 30px;
-}
+    &__item{
+        gap: 30px;
+        position: relative;
 
-.works{
-    gap: 30px;
-    position: relative;
-}
-
-
-
+        
 /* Анимация для левого элемента */
 @keyframes slideInLeft {
     0% {
@@ -63,15 +61,9 @@
         opacity: 1;
     }
 }
-
-
-
-
-.moderning {
-    width: 100%;
 }
-
-.work-text-posicion {
+    
+&__posicion {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -82,9 +74,8 @@
     align-items: center;
     justify-content: center;
 }
-  
 
-.work-texttt {
+&__text {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -93,3 +84,22 @@
     color: var(--web-studio)
 }
   
+
+&__moderning {
+    width: 100%;
+}
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+

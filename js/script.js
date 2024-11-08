@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', checkVisibility);
 
 
 let styleMode = localStorage.getItem('styleMode');
-const styleToggle = document.querySelector('.buttonsa');
+const styleToggle = document.querySelector('.header__button');
 
 const enableDarkStyle = () => {
   document.body.classList.add('darkstyle');

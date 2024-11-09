@@ -3,7 +3,7 @@
 
 
 .footer {
-    background-color: var(--footer);
+    background-color: $footer;
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -31,10 +31,10 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--web-studio);
+    color: $web-studio;
 }
 &__Web {
-    color: var(--additional-accent);
+    color: $additional-accent;
 }
 
 &__link {
@@ -42,7 +42,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
-    color: var(--web-studio);
+    color: $web-studio;
 }
 
 
@@ -63,7 +63,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
-    color: var(--text-color);
+    color: $text-color;
     
 }
 
@@ -92,7 +92,7 @@
 }
 
 &__buttont {
-    background-color: var(--networks-background);
+    background-color: $networks-background;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,15 +107,15 @@
     &:hover,
 &:focus {
     border: none;
-    outline: 0px solid var(--additional-accent);
-    background-color: var(--additional-accent);
+    outline: 0px solid $additional-accent;
+    background-color: $additional-accent;
 }
 }
 
 &__online {
     height: 20px;
     width: 20px;
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 &__form {
@@ -179,7 +179,7 @@
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 }

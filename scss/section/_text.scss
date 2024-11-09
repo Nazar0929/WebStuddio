@@ -2,7 +2,7 @@
 .text {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
 
     &__description {
@@ -114,7 +114,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--text-color);
+    color: $text-color;
     font-size: 14px;
     transition: font-size 0.4s ease;
 }

@@ -5,11 +5,11 @@
 .customers {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
     &__text {
         text-align: center;
-        color:  var(--head-text);
+        color:  $head-text;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
@@ -24,12 +24,12 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    fill: var(--social-networks);
+    fill: $social-networks;
 }
 
 &__buttonn {
-    fill: var(--social-networks);
-    border: 1px solid var(--social-networks);
+    fill: $social-networks;
+    border: 1px solid $social-networks;
     width: 170px;
     height: 92px;
     display: flex;
@@ -38,15 +38,15 @@
     border-radius: 4px;
     flex-shrink: 0;
     border: none;
-    outline: 1px solid var(--social-networks);
+    outline: 1px solid $social-networks;
     transition-property: fill, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
 &:focus {
     border: none;
-    fill: var(--additional-accent);
-    outline: 1px solid var(--additional-accent);
+    fill: $additional-accent;
+    outline: 1px solid $additional-accent;
 }
 
 }

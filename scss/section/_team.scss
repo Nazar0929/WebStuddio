@@ -3,7 +3,7 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-section);
+    background-color: $background-section;
 
     &__comand{
         font-weight: 700;
@@ -28,7 +28,7 @@
 
     &__work {
         border-radius: 0px 0px 4px 4px;
-        background-color: var(--accent-color);
+        background-color: $accent-color;
         transition: margin-top 0.4s ease;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     
@@ -83,7 +83,7 @@
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--text-color);
+    color: $text-color;
 }
 &__flex {
     margin-top: 16px;
@@ -94,7 +94,7 @@
 }
 
 &__button {
-    background-color: var(--networks-background);
+    background-color: $networks-background;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,18 +109,18 @@
 &:hover,
 &:focus {
     border: none;
-    outline: 0px solid var(--additional-accent);
-    background-color: var(--additional-accent);
+    outline: 0px solid $additional-accent;
+    background-color: $additional-accent;
     .team__icon {
         transform: scale(1.1);
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 
 
 }
 }
 &__icon {
-    fill: var(--social-site);
+    fill: $social-site;
     width: 20px;
     height: 20px;
 }

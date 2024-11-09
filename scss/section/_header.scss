@@ -2,7 +2,7 @@
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
     &__box {
         display: flex;
@@ -15,7 +15,7 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--web-studio);
+        color: $web-studio;
         margin-right: 0px;
         transition: margin-right 0.4s ease;
         margin-right: 93px;
@@ -23,34 +23,34 @@
     }
 
     &__span {
-        color: var(--href-moments);
+        color: $href-moments;
         animation: textColorChange 3s infinite;
 
         @keyframes textColorChange {
             0% {
-                color: var(--href-moments); 
+                color: $href-moments; 
             }
             50% {
-                color: var(--head-text); 
+                color: $head-text; 
             }
             100% {
-                color:  var(--href-moments); 
+                color: $href-moments; 
             }
         }
     }
     &__studio {
         animation: textColorChangee 3s infinite; 
-        color: var(--head-text);
+        color: $head-text;
 
         @keyframes textColorChangee {
             0% {
-                color: var(--head-text);
+                color: $head-text;
             }
             50% {
-                color: var(--href-moments); 
+                color: $href-moments; 
             }
             100% {
-                color:  var(--head-text); 
+                color: $head-text; 
             }
         }
     }
@@ -72,36 +72,36 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--head-text);
+        color: $head-text;
     }
     
     &__caption:active {
-        color: var(--additional-accent);
+        color: $additional-accent;
     }
     
     &__link {
         font-family: "Roboto", sans-serif;
-        color: var(--head-text);
+        color: $head-text;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
-            color: var(--href-moments);
+            color: $href-moments;
             font-weight: 700;
         }
     }
 
     &__active {
-        color: var(--additional-accent);
+        color: $additional-accent;
     }
 
     &__active::after {
         content: "";
         width: 100%;
         height: 4px;
-        background-color: var(--additional-accent);
+        background-color: $additional-accent;
         border-radius: 2px;
         display: block;
         margin-top: 0px;
@@ -213,27 +213,27 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: $text-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-    color: var(--href-moments);
+    color: $href-moments;
     .header__email {
-        fill: var(--additional-accent);
+        fill: $additional-accent;
         width: 16px;
         height: 12px;
     }
     .header__phone {
-        fill: var(--additional-accent);
+        fill: $additional-accent;
     }
     }
 }
 
 &__email {
-    fill: var(--text-color);
+    fill: $text-color;
     width: 16px;
     height: 12px;
     transition-property: fill;
@@ -247,7 +247,7 @@
     content: "";
     width: 135px;
     height: 4px;
-    background-color: var(--text-color);
+    background-color: $text-color;
     border-radius: 2px;
     display: block;
     margin-top: 0px;
@@ -257,7 +257,7 @@
 }
 
 &__phone {
-    fill: var(--text-color);
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -269,7 +269,7 @@
     content: "";
     width: 122px;
     height: 4px;
-    background-color: var(--text-color);
+    background-color: $text-color;
     border-radius: 2px;
     display: block;
     margin-top: 0px;
@@ -279,13 +279,13 @@
 
     @keyframes underline-animation {
         0% {
-            background-color: var(--accent-color); 
+            background-color: $accent-color; 
         }
         50% {
-            background-color: var(--text-color); 
+            background-color: $text-color; 
         }
         100% {
-            background-color:var(--accent-color); 
+            background-color:$accent-color; 
         }
     }
 }

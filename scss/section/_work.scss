@@ -1,6 +1,6 @@
 .work {
     padding-bottom: 94px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
     &__item {
         font-weight: 700;
@@ -81,7 +81,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--web-studio)
+    color: $web-studio;
 }
   
 

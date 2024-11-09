@@ -125,6 +125,7 @@ if (styleMode === 'dark') {
 
 
 
+
 const checkbox = document.getElementById('checkbox');
 
 // Перевіряємо, чи є збережений стан в localStorage

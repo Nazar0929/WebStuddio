@@ -79,6 +79,7 @@
 
   &__icon {
     position: absolute;
+    fill: $head-text;
     top: 11px;
     left: 12px;
     width: 18px;
@@ -99,6 +100,7 @@
   }
 
   &__text {
+    background-color: $backgroung-color;
     resize: none;
     width: 448px;
     height: 120px;

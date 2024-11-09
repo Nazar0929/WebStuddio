@@ -44,7 +44,7 @@ body {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 .header__box {
   display: flex;
@@ -70,7 +70,7 @@ body {
     color: #2196F3;
   }
   50% {
-    color: #212121;
+    color: #ffffff;
   }
   100% {
     color: #2196F3;
@@ -78,17 +78,17 @@ body {
 }
 .header__studio {
   animation: textColorChangee 3s infinite;
-  color: #212121;
+  color: #ffffff;
 }
 @keyframes textColorChangee {
   0% {
-    color: #212121;
+    color: #ffffff;
   }
   50% {
     color: #2196F3;
   }
   100% {
-    color: #212121;
+    color: #ffffff;
   }
 }
 .header__navigation {
@@ -106,14 +106,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: #ffffff;
 }
 .header__caption:active {
   color: #2196F3;
 }
 .header__link {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: #ffffff;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -201,7 +201,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #ffffff;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -218,7 +218,7 @@ body {
   fill: #2196F3;
 }
 .header__email {
-  fill: #757575;
+  fill: #ffffff;
   width: 16px;
   height: 12px;
   transition-property: fill;
@@ -229,7 +229,7 @@ body {
   content: "";
   width: 135px;
   height: 4px;
-  background-color: #757575;
+  background-color: #ffffff;
   border-radius: 2px;
   display: block;
   margin-top: 0px;
@@ -238,7 +238,7 @@ body {
   animation: underline-animation 3s infinite;
 }
 .header__phone {
-  fill: #757575;
+  fill: #ffffff;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -249,7 +249,7 @@ body {
   content: "";
   width: 122px;
   height: 4px;
-  background-color: #757575;
+  background-color: #ffffff;
   border-radius: 2px;
   display: block;
   margin-top: 0px;
@@ -259,13 +259,13 @@ body {
 }
 @keyframes underline-animation {
   0% {
-    background-color: #FFFFFF;
+    background-color: #000000;
   }
   50% {
-    background-color: #757575;
+    background-color: #ffffff;
   }
   100% {
-    background-color: #FFFFFF;
+    background-color: #000000;
   }
 }
 
@@ -277,7 +277,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 .hero__main {
   max-width: 696px;
@@ -289,7 +289,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  color: #FFFFFF;
+  color: #000000;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -304,7 +304,7 @@ body {
   }
 }
 .hero__main:hover {
-  color: #757575;
+  color: #ffffff;
 }
 .hero__order {
   font-family: "Roboto";
@@ -316,7 +316,7 @@ body {
   border-radius: 4px;
   transition: border-radius 0.4s ease;
   background-color: #2196F3;
-  color: #FFFFFF;
+  color: #000000;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition-property: color, background-color;
@@ -325,7 +325,7 @@ body {
   animation: breathing 3s infinite ease-in-out;
 }
 .hero__order:hover, .hero__order:focus {
-  background-color: #FFFFFF;
+  background-color: #000000;
   color: #2196F3;
 }
 @keyframes breathing {
@@ -340,7 +340,7 @@ body {
 .text {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 .text__description {
   display: none;
@@ -436,14 +436,14 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: #ffffff;
   font-size: 14px;
   transition: font-size 0.4s ease;
 }
 
 .work {
   padding-bottom: 94px;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 .work__item {
   font-weight: 700;
@@ -522,7 +522,7 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #F5F4FA;
+  background-color: #151515;
 }
 .team__comand {
   font-weight: 700;
@@ -532,6 +532,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  color: #ffffff;
 }
 .team__comand:hover {
   font-size: 40px;
@@ -544,7 +545,7 @@ body {
 }
 .team__work {
   border-radius: 0px 0px 4px 4px;
-  background-color: #FFFFFF;
+  background-color: #000000;
   transition: margin-top 0.4s ease;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
@@ -590,7 +591,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: #ffffff;
 }
 .team__flex {
   margin-top: 16px;
@@ -600,7 +601,7 @@ body {
   justify-content: center;
 }
 .team__button {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -619,10 +620,10 @@ body {
 }
 .team__button:hover .team__icon, .team__button:focus .team__icon {
   transform: scale(1.1);
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .team__icon {
-  fill: #AFB1B8;
+  fill: #000000;
   width: 20px;
   height: 20px;
 }
@@ -630,11 +631,11 @@ body {
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 .customers__text {
   text-align: center;
-  color: #212121;
+  color: #ffffff;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -647,11 +648,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  fill: #AFB1B8;
+  fill: #ffffff;
 }
 .customers__buttonn {
-  fill: #AFB1B8;
-  border: 1px solid #AFB1B8;
+  fill: #ffffff;
+  border: 1px solid #ffffff;
   width: 170px;
   height: 92px;
   display: flex;
@@ -660,7 +661,7 @@ body {
   border-radius: 4px;
   flex-shrink: 0;
   border: none;
-  outline: 1px solid #AFB1B8;
+  outline: 1px solid #ffffff;
   transition-property: fill, outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -676,7 +677,7 @@ body {
 }
 
 .footer {
-  background-color: #2F303A;
+  background-color: #0c0c0c;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -723,7 +724,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  color: #757575;
+  color: #ffffff;
 }
 .footer__second {
   margin-left: 70px;
@@ -744,7 +745,7 @@ body {
   margin-top: 20px;
 }
 .footer__buttont {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -764,7 +765,7 @@ body {
 .footer__online {
   height: 20px;
   width: 20px;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .footer__form {
   margin-left: 93px;
@@ -819,7 +820,7 @@ body {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 
 .backdrop {
@@ -842,12 +843,12 @@ body {
   top: 50%;
   left: 50%;
   border-radius: 4px;
-  background: #FFF;
+  background: #000000;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .backdrop__title {
   margin-bottom: 12px;
-  color: #212121;
+  color: #ffffff;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -855,7 +856,7 @@ body {
   letter-spacing: 0.6px;
 }
 .backdrop__label {
-  color: #757575;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -873,9 +874,9 @@ body {
   width: 448px;
   height: 40px;
   border-radius: 4px;
-  outline: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid rgb(255, 255, 255);
   border: none;
-  background-color: #FFF;
+  background-color: #000000;
   fill: #FFF;
   transition-property: outline;
   transition-duration: 250ms;
@@ -892,6 +893,7 @@ body {
 }
 .backdrop__icon {
   position: absolute;
+  fill: #ffffff;
   top: 11px;
   left: 12px;
   width: 18px;
@@ -903,13 +905,14 @@ body {
 .backdrop__comment {
   display: block;
   margin-bottom: 4px;
-  color: #757575;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
 }
 .backdrop__text {
+  background-color: #000000;
   resize: none;
   width: 448px;
   height: 120px;
@@ -921,7 +924,7 @@ body {
   letter-spacing: 0.12px;
   border-radius: 4px;
   border: none;
-  outline: 1px solid #AFB1B8;
+  outline: 1px solid #ffffff;
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -980,7 +983,7 @@ body {
 .backdrop__button:hover, .backdrop__button:focus {
   border: none;
   outline: 0px solid red;
-  background: #757575;
+  background: #ffffff;
 }
 .backdrop__closee {
   position: absolute;
@@ -1017,7 +1020,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   border-top: 1px solid #ECECEC;
-  background-color: #FFF;
+  background-color: #000000;
 }
 .main__list {
   display: flex;
@@ -1042,11 +1045,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main__link:hover, .main__link:focus {
-  color: #FFFFFF;
+  color: #000000;
   background-color: #2196F3;
   border-radius: 4px;
   border: none;
-  outline: 0px solid #FFFFFF;
+  outline: 0px solid #000000;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .main__lists {
@@ -1082,7 +1085,7 @@ body {
 .main__text {
   width: 100%;
   height: 295px;
-  color: #FFFFFF;
+  color: #000000;
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
   padding: 63px 24px;
@@ -1112,12 +1115,12 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: #ffffff;
 }
 .main__captions {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   margin-top: 4px;
-  color: #757575;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

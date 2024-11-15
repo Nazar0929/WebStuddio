@@ -46,8 +46,7 @@
 
 &__order {
     font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
+    @extend %weight;
     line-height: 1.88;
     letter-spacing: 0.06em;
     border: none;

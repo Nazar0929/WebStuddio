@@ -96,34 +96,32 @@ document.addEventListener('DOMContentLoaded', checkVisibility);
 
 
 
-// let styleMode = localStorage.getItem('styleMode');
-// const styleToggle = document.querySelector('.header__button');
-
-// const enableDarkStyle = () => {
-//   document.body.classList.add('darkstyle');
-//   localStorage.setItem('styleMode', 'dark');
-// };
-
-// const disableDarkStyle = () => {
-//   document.body.classList.remove('darkstyle');
-//   localStorage.setItem('styleMode', 'light');
-// };
-
-// styleToggle.addEventListener('click', () => {
-//   if (styleMode !== 'dark') {
-//     enableDarkStyle();
-//   } else {
-//     disableDarkStyle();
-//   }
-// });
-
-// if (styleMode === 'dark') {
-//   enableDarkStyle();
-// }
 
 
+let styleMode = localStorage.getItem('styleMode');
+const styleToggle = document.querySelector('.header__button');
 
+const enableDarkStyle = () => {
+  document.body.classList.add('darkstyle');
+  localStorage.setItem('styleMode', 'dark');
+};
 
+const disableDarkStyle = () => {
+  document.body.classList.remove('darkstyle');
+  localStorage.setItem('styleMode', 'light');
+};
+
+styleToggle.addEventListener('click', () => {
+  if (styleMode !== 'dark') {
+    enableDarkStyle();
+  } else {
+    disableDarkStyle();
+  }
+});
+
+if (styleMode === 'dark') {
+  enableDarkStyle();
+}
 
 
 
@@ -144,3 +142,7 @@ if (localStorage.getItem('isChecked') === 'true') {
 checkbox.addEventListener('change', () => {
   localStorage.setItem('isChecked', checkbox.checked);
 });
+
+
+
+

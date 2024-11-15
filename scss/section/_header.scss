@@ -5,8 +5,7 @@
     background-color: $accent-color;
 
     &__box {
-        display: flex;
-        align-items: center;
+        @include flex-box ($wrap:nowrap,$justify:flex-start);
     }
 
     &__logos {
@@ -61,9 +60,8 @@
     }
 
     &__list {
-        display: flex;
         gap: 50px;
-        align-items: center;
+        @include flex-box ($wrap:nowrap,$justify:flex-start);
     }
 
     &__caption{
@@ -196,18 +194,16 @@
 }
    
 &__text {
-    display: flex;
-    align-items: center;
     gap: 10px;
     position: relative;
+    @include flex-box ($wrap:nowrap,$justify:flex-start);
 }
 
 
 
 &__contact {
     font-family: "Roboto", sans-serif;
-    display: flex;
-    align-items: center;
+    @include flex-box ($wrap:nowrap,$justify:flex-start);
     gap: 10px;
     font-weight: 500;
     font-size: 14px;

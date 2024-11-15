@@ -96,13 +96,13 @@
 }
 
 &__head {
-    font-weight: 700;
-    font-size: 14px;
+    @extend %font; 
     transition: font-size 0.4s ease;
     line-height: 1.14;
     margin-bottom: 10px;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    color: $head-text;
 
     
 &:hover {

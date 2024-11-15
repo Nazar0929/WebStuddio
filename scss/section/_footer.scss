@@ -75,9 +75,8 @@
 &__join {
     color: #FFF;
     font-family: Roboto;
-    font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    @extend %font; 
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
@@ -131,9 +130,8 @@
     margin-bottom: 20px;
     color: #FFF;
     font-family: Roboto;
-    font-size: 14px;
+    @extend %font; 
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
@@ -163,9 +161,8 @@
     color: #FFF;
     text-align: center;
     font-family: Roboto;
-    font-size: 16px;
+    @extend %weight;
     font-style: normal;
-    font-weight: 700;
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.96px;
     display: flex;

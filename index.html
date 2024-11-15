@@ -471,7 +471,10 @@
     <div class="backdrop is-hidden"  data-modal>
         <div class="backdrop__modal ">
           <h2 class="backdrop__title">Залиште свої дані, ми вам передзвонимо</h2>
-          <form class="backdrop__form">
+          <form  action="https://api.web3forms.com/submit" method="POST" class="backdrop__form">
+
+            <input type="hidden" name="access_key" value="ce1201de-7164-4780-86de-73433d9e954b">
+
             <label for="name" class="backdrop__label">Ім'я</label>
             <div class="backdrop__wrapper">
             <input type="text" id="name" class="backdrop__input" required>

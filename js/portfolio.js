@@ -16,31 +16,31 @@ function onEntry(entry) {
 
 
   let styleMode = localStorage.getItem('styleMode');
-const styleToggle = document.querySelector('.header__button');
-
-const enableDarkStyle = () => {
-  document.body.classList.add('darkstyle');
-  localStorage.setItem('styleMode', 'dark');
-};
-
-const disableDarkStyle = () => {
-  document.body.classList.remove('darkstyle');
-  localStorage.setItem('styleMode', 'light');
-};
-
-styleToggle.addEventListener('click', () => {
-  if (styleMode !== 'dark') {
+  const styleToggle = document.querySelector('.header__button');
+  
+  const enableDarkStyle = () => {
+    document.body.classList.add('darkstyle');
+    localStorage.setItem('styleMode', 'dark');
+  };
+  
+  const disableDarkStyle = () => {
+    document.body.classList.remove('darkstyle');
+    localStorage.setItem('styleMode', 'light');
+  };
+  
+  styleToggle.addEventListener('click', () => {
+    if (styleMode !== 'dark') {
+      enableDarkStyle();
+    } else {
+      disableDarkStyle();
+    }
+  });
+  
+  if (styleMode === 'dark') {
     enableDarkStyle();
-  } else {
-    disableDarkStyle();
   }
-});
-
-if (styleMode === 'dark') {
-  enableDarkStyle();
-}
-
-
+  
+  
 
 const checkbox = document.getElementById('checkbox');
 
@@ -53,3 +53,29 @@ if (localStorage.getItem('isChecked') === 'true') {
 checkbox.addEventListener('change', () => {
   localStorage.setItem('isChecked', checkbox.checked);
 });
+
+
+
+
+
+
+
+
+
+(() => {
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter__btn");
+    const projects = document.querySelectorAll(".project__item");
+  
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const filterValue = button.getAttribute("data-filter");
+  
+        projects.forEach(function (project) {
+          const projectClasses = project.classList;
+          if (filterValue === "all" || projectClasses.conta
+  );
+      });
+    });
+  })})})

@@ -1,23 +1,32 @@
 
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(../images/photohero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: $accent-color;
 
-    
+    @media screen and (min-width: 768px){
+        
+      }
+
+    @media screen and (min-width: 1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+      }
+
+
 &__main {
-    max-width: 696px;
+    width: 100%;
     margin:0 auto ;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
     margin-bottom: 30px;
     color: $accent-color;
@@ -25,6 +34,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation: shadowChange 4s infinite alternate;
+
+    @media screen and (min-width: 480px) {
+        width: 360px;  
+      
+        }
+
+
+      @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        width: 696px;
+      }
 
     
 
@@ -54,12 +76,22 @@
     transition: border-radius 0.4s ease;
     background-color: $additional-accent;
     color: $accent-color;
-    padding: 10px 32px;
+    padding: 10px 24px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation: breathing 3s infinite ease-in-out;
+
+   
+    @media screen and (min-width: 768px) {
+        padding: 10px 24px;
+    }
+
+    
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+    }
 
     &:hover,
 &:focus {

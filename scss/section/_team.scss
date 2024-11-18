@@ -1,9 +1,15 @@
 
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $background-section;
+
+
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__comand{
         font-weight: 700;
@@ -23,8 +29,11 @@
 
     &__lists {
         display: flex;
-        max-width: 1170px;
+        flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
+
+
     }
 
     &__work {
@@ -32,38 +41,69 @@
         background-color: $accent-color;
         transition: margin-top 0.4s ease;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+        animation: float 3s ease-in-out infinite; 
+        animation-delay: calc(0s + 0s);
+
+        
+        @media screen and (min-width: 1200px){
+
+        }
+        
+        @media screen and (min-width: 1200px){
+
+        }
+
+        @media screen and (min-width: 1200px){
+
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px); /* Поднимаем на 10px */
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
     
-}
-
-&__work {
-    animation: float 3s ease-in-out infinite; /* Плавание */
-    /* Чтобы сделать плавание менее монотонным, можно добавить небольшие временные изменения */
-    animation-delay: calc(0s + 0s);
-
-    @keyframes float {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-10px); /* Поднимаем на 10px */
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
+        
 }
 
 &__work:nth-child(2) {
-    animation-delay: 0.4s; /* Задержка для второго элемента */
+    animation-delay: 0.4s; 
 }
 
 &__work:nth-child(3) {
-    animation-delay: 0.8s; /* Задержка для третьего элемента */
+    animation-delay: 0.8s; 
 }
 
 &__work:nth-child(4) {
-    animation-delay: 1.2s; /* Задержка для третьего элемента */
+    animation-delay: 1.2s; 
 }
+
+
+&__photos {
+    width: 100%;
+
+    @media screen and (min-width: 480px){
+        width: 450px;
+        height: 460px;
+    }
+
+    @media screen and (min-width: 768px){
+        width: 354px;
+        height: 354px;     
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        height: 260px;     
+    }
+}
+
 
 &__card {
     padding-top: 30px;
@@ -126,6 +166,10 @@
     width: 20px;
     height: 20px;
 }
+
 }
+
+
+
 
 

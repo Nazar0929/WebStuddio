@@ -1,6 +1,15 @@
 .work {
     padding-bottom: 94px;
     background-color: $accent-color;
+    display: none;
+    padding-top: 94px;
+
+
+    @media screen and (min-width: 1200px){
+        display: block;
+    }
+
+    
 
     &__item {
         font-weight: 700;

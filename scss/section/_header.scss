@@ -1,8 +1,18 @@
 
+
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: $accent-color;
+
+    
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
 
     &__box {
         @include flex-box ($wrap:nowrap,$justify:flex-start);
@@ -11,14 +21,21 @@
     &__logos {
         font-family: "Raleway", sans-serif;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 1.19;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.72px;
         color: $web-studio;
-        margin-right: 0px;
         transition: margin-right 0.4s ease;
-        margin-right: 93px;
-    
+        margin-right: auto;
+
+        @media screen and (min-width:768px){
+           margin-right: 88px; 
+        }
+        @media screen and (min-width:1200px){
+            margin-right: 93px;
+            font-size: 26px;
+            letter-spacing: 0.78px;
+        }
     }
 
     &__span {
@@ -55,13 +72,19 @@
     }
 
     &__navigation{
-        display: flex;
+        display: none;
         margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+          }
     }
 
     &__list {
         gap: 50px;
+        display: flex;
         @include flex-box ($wrap:nowrap,$justify:flex-start);
+
     }
 
     &__caption{
@@ -76,6 +99,8 @@
     &__caption:active {
         color: $additional-accent;
     }
+
+
     
     &__link {
         font-family: "Roboto", sans-serif;
@@ -104,15 +129,21 @@
         display: block;
         margin-top: 0px;
         position: absolute;
-        margin-top: 33.5px;
         transition: 0.3s ease;
         transition-timing-function: ease-in-out;
         transform: scaleX(1);
 
+        @media screen and (min-width: 768px){
+            margin-top: 35px;
+          }
+
+          @media screen and (min-width: 1200px){
+            margin-top: 33.5px;
+          }
+
         &:hover::after {
             transform: scaleX(0);
         }
-        
     }
 
 
@@ -151,7 +182,14 @@
       }
 
 
-      
+
+      @media screen and (min-width: 768px){
+        display: none;
+      }
+
+      @media screen and (min-width: 1200px){
+        display: flex;
+      }
       
     }
     
@@ -189,8 +227,21 @@
     display: none;
   }
   &__description {
-    display: flex;
-    gap: 50px;
+    display: none;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      
+
 }
    
 &__text {
@@ -248,8 +299,12 @@
     display: block;
     margin-top: 0px;
     position: absolute;
-    margin-top: 33.5px;
+    margin-top: 2px;
     animation: underline-animation 3s infinite;
+
+    @media screen  and (min-width:768px){
+        height: 2px;
+    }
 }
 
 &__phone {
@@ -270,8 +325,12 @@
     display: block;
     margin-top: 0px;
     position: absolute;
-    margin-top: 33.5px;
+    margin-top: 2px;
     animation: underline-animation 3s infinite; 
+
+    @media screen  and (min-width:768px){
+        height: 2px;
+    }
 
     @keyframes underline-animation {
         0% {

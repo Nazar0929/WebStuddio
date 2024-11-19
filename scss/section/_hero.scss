@@ -72,6 +72,7 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     border: none;
+    width: 100%;
     border-radius: 4px;
     transition: border-radius 0.4s ease;
     background-color: $additional-accent;
@@ -82,6 +83,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation: breathing 3s infinite ease-in-out;
+    cursor: pointer;
+
+    
+   
+    @media screen and (min-width: 480px) {
+        width: 200px;
+    }
 
    
     @media screen and (min-width: 768px) {

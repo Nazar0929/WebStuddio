@@ -39,24 +39,59 @@ handleScroll();
 
 
 
+document.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const windowHeight = window.innerHeight;
+
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const sectionBottom = section.getBoundingClientRect().bottom;
+
+    // Если секция полностью или частично в области видимости
+    if (sectionTop < windowHeight && sectionBottom > 0) {
+      section.classList.add("visible");
+    } else {
+      section.classList.remove("visible");
+    }
+  });
+});
 
 
 
-function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-        change.target.classList.add('element-show');
-      } else {
-        change.target.classList.remove('element-show');
-      }
-    });
-  }
-  let options = { threshold: [0.4] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elementss = document.querySelectorAll('.container');
-  for (let elm of elementss) {
-    observer.observe(elm);
-  }
+
+
+
+
+
+document.addEventListener("scroll", () => {
+  const headers = document.querySelectorAll("header");
+  const footers = document.querySelectorAll("footer");
+  const windowHeight = window.innerHeight;
+
+  // Для header
+  headers.forEach((header) => {
+    const headerTop = header.getBoundingClientRect().top;
+    const headerBottom = header.getBoundingClientRect().bottom;
+
+    if (headerTop < windowHeight && headerBottom > 0) {
+      header.classList.add("visible");
+    } else {
+      header.classList.remove("visible");
+    }
+  });
+
+  // Для footer
+  footers.forEach((footer) => {
+    const footerTop = footer.getBoundingClientRect().top;
+    const footerBottom = footer.getBoundingClientRect().bottom;
+
+    if (footerTop < windowHeight && footerBottom > 0) {
+      footer.classList.add("visible");
+    } else {
+      footer.classList.remove("visible");
+    }
+  });
+});
 
 
 

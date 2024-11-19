@@ -42,7 +42,6 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   transition: opacity 0.5s ease-in-out;
 }
 @media screen and (min-width: 480px) {

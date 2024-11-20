@@ -1492,10 +1492,10 @@ header.visible, footer.visible {
   color: #FFFFFF;
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
-  padding: 63px 24px;
+  padding: 80px 24px;
   color: #FFF;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
@@ -1507,6 +1507,12 @@ header.visible, footer.visible {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .main__text {
+    font-size: 18px;
+    padding: 63px 24px;
+  }
 }
 .main__frame {
   padding: 20px 24px;

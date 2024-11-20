@@ -71,13 +71,11 @@
     #EEEEEE;
       border-right: 1px solid 
     #EEEEEE;
-  
     border-bottom: 1px solid 
     #EEEEEE;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     width: 100%;
     
 
@@ -134,10 +132,10 @@
     color: $accent-color;
     background: rgba(33, 150, 243, 0.90);
     position: absolute;
-    padding: 63px 24px;
+    padding: 80px 24px;
     color: #FFF;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
@@ -149,11 +147,15 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px){
+       font-size: 18px; 
+       padding: 63px 24px;
+    }
 }
 
 
 &__frame {
-
   padding: 20px 24px;  
     
 }

@@ -1,3 +1,6 @@
+
+
+
 .container {
     width: 1230px;
     margin-right: auto;
@@ -53,6 +56,34 @@
     display: flex;
     align-items: center;
 }
+
+
+.header__logos {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 1.19;
+    letter-spacing: 0.72px;
+    color: #000000;
+    transition: margin-right 0.4s ease;
+    margin-right: auto;
+
+
+}
+
+.header__span {
+    color: #2196F3;
+
+}
+
+.header__studio {
+    color: #212121;
+
+}
+
+
+
+
 
 .contact-nav {
     margin-left: auto;
@@ -111,9 +142,7 @@
     line-height: normal;
 }
 
-.section-address {
 
-}
 
 .address {
     text-align: center;

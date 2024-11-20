@@ -2,16 +2,27 @@
 
 
 .main {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     border-top: 1px solid #ECECEC;
     background-color: $backgroung-color;
 
+    @media screen  and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 50px;
         gap: 8px;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 768px){
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
     }
     
     &__link {
@@ -47,15 +58,41 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+       }
 }
 
 
 
 &__card {
-    flex-basis: calc((100% - 60px) /3 );
+    border-left: 1px solid
+    #EEEEEE;
+      border-right: 1px solid 
+    #EEEEEE;
+  
+    border-bottom: 1px solid 
+    #EEEEEE;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 100%;
+    
+
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+      max-width: 370px;
+    }
+
+    
 
     
 &:hover {
@@ -82,6 +119,13 @@
 
 &__description {
     display: block;
+    width: 100%;
+    height: 294px;
+
+    @media screen and (min-width: 768px){
+        height: 100%;
+    }
+
 }
 
 &__text {
@@ -109,12 +153,7 @@
 
 
 &__frame {
-    border-left: 1px solid
-  #EEEEEE;
-    border-right: 1px solid 
-  #EEEEEE;
-    border-bottom: 1px solid 
-  #EEEEEE;
+
   padding: 20px 24px;  
     
 }

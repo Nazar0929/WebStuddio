@@ -4,6 +4,11 @@
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: $accent-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 
     
   @media screen and (min-width: 768px) {
@@ -138,7 +143,7 @@
           }
 
           @media screen and (min-width: 1200px){
-            margin-top: 33.5px;
+            margin-top: 28px;
           }
 
         &:hover::after {
@@ -343,6 +348,202 @@
             background-color:$accent-color; 
         }
     }
+}
+
+
+
+&__button {
+    position: absolute;
+    right: 12px;
+    z-index: 2;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px
+
+    
+}
+
+
+&__button &__use-close:hover {
+  fill: #2196F3;
+}
+
+
+@media screen and (min-width: 768px) {
+    &__button {
+        display:none
+    }
+}
+
+&__button &__use-close {
+  width: 40px;
+height: 40px;
+flex-shrink: 0;
+    display: none
+}
+
+
+
+&__button:hover &__use-close,
+&__button:focus &__use-close {
+  fill: var(--accent-color)
+  //   width: 40px;
+  // height: 40px;
+  // flex-shrink: 0;
+}
+
+&__button.is-open 
+&__use-close {
+    display: block;
+    color: var(--primary-title-color)
+}
+
+&__button &__use-burger {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+    display: block;
+    color: var(--primary-title-color)
+}
+
+&__button:hover &__use-burger,
+&__button:focus &__use-burger {
+    fill: var(--accent-color)
+}
+
+&__button.is-open &__use-burger {
+    display: none
+}
+
+
+
+.header__menu-m {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+//     width: 480px;
+// height: 796px;
+// flex-shrink: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: rgba(255,255,255,.986)
+}
+
+
+
+
+.header__menu-m.is-open {
+    display: block
+}
+
+@media screen and (min-width: 768px) {
+    .header__menu-m.is-open {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__menu-m {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        // display: flex;
+        position: static;
+        // padding: 0;
+        // height: auto
+    }
+}
+
+@media screen and (max-height: 380px)and (max-width: 320px) {
+    .header__menu-m {
+        padding:15px 15px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-nav__list {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+// @media screen and (max-width: 767px) {
+//     .site-nav__item:not(:last-child) {
+//         padding-bottom:32px;
+//     }
+// }
+
+@media screen and (min-width: 768px) {
+    .site-nav__item:not(:last-child) {
+        margin-right:50px;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-nav__item {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        // display: none;
+    }
+}
+
+@media screen and (max-height: 380px)and (max-width: 320px) {
+    .site-nav__item {
+        padding-bottom: 32px;
+        display: none;
+        
+    }
+}
+
+.site-nav__link {
+    display: block;
+    color: var(--primary-title-color);
+    line-height: 1.14;
+    letter-spacing: .03em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: none;
+    text-align: start;
+    line-height: 1.17;
+    letter-spacing: .02em;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+@media screen and (min-width: 768px) {
+    .site-nav__link {
+        padding:32px 0;
+        position: relative;
+        font-size: 14px;
+        line-height: 1.14
+    }
+}
+
+@media screen and (max-height: 380px)and (max-width: 320px) {
+    .site-nav__link {
+        font-size:20px;
+        color: #212121;
+    }
+}
+
+.site-nav__link:hover,.site-nav__link:focus {
+    color: var(--accent-color)
 }
 
 }

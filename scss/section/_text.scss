@@ -118,15 +118,19 @@
     font-size: 14px;
     transition: font-size 0.4s ease;
 
+    
     @media screen and (min-width: 480px){
         width: 450px;
-    }
+      }
+
     @media screen and (min-width: 768px){
-      width: 354px;
-    }
-    @media screen and (min-width: 1200px){
-      width: 270px;
-    }
+        width: 354px;
+      }
+
+      @media screen and (min-width: 1200px){
+        width: 270px;
+      }
+ 
 }
 
 }

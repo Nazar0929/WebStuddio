@@ -510,6 +510,7 @@ header.visible, footer.visible {
   text-transform: none;
   text-align: start;
   line-height: 1.17;
+  margin-top: 20px;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
@@ -531,6 +532,29 @@ header.visible, footer.visible {
 }
 .header .site-nav__link:hover, .header .site-nav__link:focus {
   color: var(--accent-color);
+}
+.header .studio-contacts__link {
+  color: #2196F3;
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.header .d {
+  margin-bottom: 200px;
+}
+.header .s {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-top: 32px;
 }
 
 .hero {

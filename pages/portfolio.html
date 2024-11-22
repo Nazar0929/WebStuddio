@@ -53,14 +53,14 @@
         <section class="main">
             <div class="container">
             <ul class="main__list">
-                <li class="main__item"><button type="button" class="main__link">Усі</button></li>
-                <li class="main__item"><button type="button" class="main__link">Веб-сайти</button></li>
-                <li class="main__item"><button type="button" class="main__link">Додатки</button></li>
-                <li class="main__item"><button type="button" class="main__link">Дизайн</button></li>
-                <li class="main__item"><button type="button" class="main__link">Маркетинг</button></li>
+                <li class="main__item button"><button type="button" data-filter="all" class="main__link">Усі</button></li>
+                <li class="main__item"><button type="button" data-filter="web" class="main__link">Веб-сайти</button></li>
+                <li class="main__item"><button type="button" data-filter="apps" class="main__link">Додатки</button></li>
+                <li class="main__item"><button type="button" data-filter="design" class="main__link">Дизайн</button></li>
+                <li class="main__item"><button type="button" data-filter="marketing" class="main__link">Маркетинг</button></li>
             </ul>
             <ul class="main__lists">
-                <li class="main__card">
+                <li class="d main__card web" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/computer.jpg" alt="Notebook" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -70,7 +70,7 @@
                     <p class="main__captions">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card design" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/basketball.jpg" alt="basketball" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -80,7 +80,7 @@
                     <p class="main__captions">Дизайн</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card apps" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/seafood.jpg" alt="fisher" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -90,7 +90,7 @@
                     <p class="main__captions">Додаток</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card marketing" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/headphones.jpg" alt="headphone" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -100,7 +100,7 @@
                     <p class="main__captions">Маркетинг</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card apps" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/box.jpg" alt="box" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -110,7 +110,7 @@
                     <p class="main__captions">Додаток</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card web" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/iphonecomputer.jpg" alt="monitor" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -120,7 +120,7 @@
                     <p class="main__captions">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card design" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/book.jpg" alt="book" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -130,7 +130,7 @@
                     <p class="main__captions">Дизайн</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card marketing" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/labeltag.jpg" alt="eticketcka" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -140,7 +140,7 @@
                     <p class="main__captions">Маркетинг</p>
                     </div>
                 </li>
-                <li class="main__card">
+                <li class="d main__card apps" style="display: block;">
                     <div class="main__photo">
                     <img src="../images/businessnotebook.jpg" alt="noteeebook" class="main__description">
                     <p class="main__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>

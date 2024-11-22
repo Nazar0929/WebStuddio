@@ -104,19 +104,24 @@ checkbox.addEventListener('change', () => {
 
 
 (() => {
-
   document.addEventListener("DOMContentLoaded", function () {
-    const filterButtons = document.querySelectorAll(".filter__btn");
-    const projects = document.querySelectorAll(".project__item");
-  
+    const filterButtons = document.querySelectorAll(".main__link");
+    const projects = document.querySelectorAll(".d");
+
     filterButtons.forEach(function (button) {
       button.addEventListener("click", function () {
         const filterValue = button.getAttribute("data-filter");
-  
+
         projects.forEach(function (project) {
           const projectClasses = project.classList;
-          if (filterValue === "all" || projectClasses.conta
-  );
+          // Перевірка: якщо фільтр "all" або проект містить клас із фільтром
+          if (filterValue === "all" || projectClasses.contains(filterValue)) {
+            project.style.display = "block"; // Показати
+          } else {
+            project.style.display = "none"; // Сховати
+          }
+        });
       });
     });
-  })})})
+  });
+})();

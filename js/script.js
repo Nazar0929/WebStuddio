@@ -189,9 +189,16 @@ checkbox.addEventListener('change', () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
 
+  // Скидання стану меню при завантаженні сторінки
+  window.addEventListener("load", () => {
+    menuBtnRef.setAttribute("aria-expanded", "false");
+    menuBtnRef.classList.remove("is-open");
+    mobileMenuRef.classList.remove("is-open");
+  });
+
+  // Логіка відкриття/закриття меню
   menuBtnRef.addEventListener("click", () => {
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || "false";
+    const expanded = menuBtnRef.getAttribute("aria-expanded") === "true";
 
     menuBtnRef.classList.toggle("is-open");
     menuBtnRef.setAttribute("aria-expanded", !expanded);
@@ -199,3 +206,7 @@ checkbox.addEventListener('change', () => {
     mobileMenuRef.classList.toggle("is-open");
   });
 })();
+
+
+
+

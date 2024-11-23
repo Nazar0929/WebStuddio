@@ -21,6 +21,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
+
   &__modal {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -30,19 +31,19 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     top: 50%;
-    width: 450px;
-    height: 609px;
     left: 50%;
     border-radius: 4px;
     background: $backgroung-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+      width: 450px;
+      height: 609px;
+    
+      @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+      }
 
-      
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
-  }
   }
 
 
@@ -52,18 +53,22 @@
     text-align: center;
     font-size: 20px;
     font-weight: 700;
-    line-height: normal;
+    line-height: calc(30 / 20);
     letter-spacing: 0.6px;
+
+    @media screen and (min-width: 1200px) {
+      line-height: calc(23 / 20);
+    }
   }
 
   &__label {
     color: $text-color;
     font-size: 12px;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.12px;
     display: block;
     margin-bottom: 4px;
+    line-height: calc(14 / 12);
   }
 
   &__wrapper {
@@ -74,6 +79,7 @@
     padding-left: 40px;
     margin-bottom: 10px;
     width: 100%;
+    line-height: calc(14 / 12);
     height: 40px;
     border-radius: 4px;
     outline: 1px solid $outline-form;
@@ -129,7 +135,6 @@
     color: rgba(117, 117, 117, 0.5);
     font-size: 12px;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.12px;
     border-radius: 4px;
     border: none;
@@ -137,6 +142,12 @@
     transition-property: outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: calc(16 / 14);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
 
     &:hover,
     &:focus {
@@ -151,6 +162,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    line-height: calc(14 / 12);
+	
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
 
   
   }
@@ -181,6 +198,7 @@
     line-height: 24px;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
+    line-height: calc(24 / 14);
 
     
     @media screen and (min-width: 1200px) {
@@ -244,12 +262,17 @@
       fill: $additional-accent;
       border: none;
       outline: 1px solid $web-studio;
+
+      .backdrop__close {
+        transform: rotate(180deg);
+      } 
     }
   }
 
   &__close {
     width: 18px;
     height: 18px;
+    transition:  transform 0.4s ease;
   }
 }
 

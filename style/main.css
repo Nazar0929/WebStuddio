@@ -467,10 +467,15 @@ header.visible, footer.visible {
 }
 
 .menu__link {
+  color: #212121;
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.8px;
   line-height: 1.17;
+}
+
+.menu__link:hover {
+  color: #2196F3;
 }
 
 .ssw {
@@ -493,9 +498,44 @@ header.visible, footer.visible {
 }
 
 .menu__item-contact:first-child > .menu__link-contact {
+  color: #2196F3;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.68px;
+}
+
+.menu__item-contact:last-child > .menu__link-contact {
+  color: #757575;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
+
+.menu__list-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__link-social {
+  color: #2196F3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.36px;
+}
+
+.menu__item-social:not(:last-child) {
+  margin-right: 10px;
+  display: flex;
+}
+
+.menu__item-social:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
 }
 
 .hero {
@@ -1324,7 +1364,7 @@ header.visible, footer.visible {
 @media screen and (min-width: 480px) {
   .backdrop__modal {
     width: 450px;
-    height: 581px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1426,9 +1466,15 @@ header.visible, footer.visible {
 .backdrop__wrapperr {
   justify-content: center;
   margin-top: 20px;
-  display: flex;
+  display: block;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .backdrop__wrapperr {
+    display: flex;
+  }
 }
 @media screen and (min-width: 1200px) {
   .backdrop__wrapperr {
@@ -1466,6 +1512,10 @@ header.visible, footer.visible {
     line-height: 1.71;
   }
 }
+.backdrop .ds {
+  display: flex;
+  justify-content: center;
+}
 .backdrop__button {
   color: #fff;
   text-align: center;
@@ -1481,17 +1531,9 @@ header.visible, footer.visible {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
   margin-top: 30px;
-  margin-left: 84px;
-  margin-right: 84px;
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .backdrop__button {
-    margin-left: 124px;
-    margin-right: 124px;
-  }
 }
 .backdrop__button:hover, .backdrop__button:focus {
   border: none;

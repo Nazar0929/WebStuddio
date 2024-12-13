@@ -36,6 +36,16 @@ body {
   background-color: var(--background-color);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 50px;
+}
+
 .container {
   max-width: 1200px;
   margin-right: auto;
@@ -167,15 +177,6 @@ header.visible, footer.visible {
     color: #ffffff;
   }
 }
-.header__navigation {
-  display: none;
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .header__navigation {
-    display: flex;
-  }
-}
 .header__list {
   gap: 50px;
   display: flex;
@@ -192,6 +193,13 @@ header.visible, footer.visible {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #ffffff;
+  display: none;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__caption {
+    display: flex;
+  }
 }
 .header__caption:active {
   color: #2196F3;
@@ -227,9 +235,10 @@ header.visible, footer.visible {
   transform: scaleX(0); /* Линия исчезает */
 }
 .header__label {
-  margin-left: 50px;
-  height: 40px;
-  width: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 30px;
+  width: 80px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: inset 0 0 5px 4px rgb(255, 255, 255), inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096), inset 0 0 0 3px rgba(0, 0, 0, 0.3);
@@ -248,11 +257,15 @@ header.visible, footer.visible {
 @media screen and (min-width: 768px) {
   .header__label {
     display: none;
+    margin-right: 0px;
+    height: 40px;
+    width: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__label {
     display: flex;
+    margin-right: 70px;
   }
 }
 .header__label::before {
@@ -268,17 +281,22 @@ header.visible, footer.visible {
   transition: 0.4s;
 }
 #checkbox:checked ~ .header__label::before {
-  left: 70px;
+  left: 50px;
   background-color: #000000;
   background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
   transition: 0.4s;
+}
+@media screen and (min-width: 768px) {
+  #checkbox:checked ~ .header__label::before {
+    left: 70px;
+  }
 }
 .header #checkbox {
   display: none;
 }
 .header__description {
   display: none;
-  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .header__description {
@@ -403,6 +421,7 @@ header.visible, footer.visible {
 .header__button {
   border: none;
   background-color: transparent;
+  fill: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .header__button {
@@ -424,7 +443,7 @@ header.visible, footer.visible {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   padding: 48px 40px;
   opacity: 1;
-  background-color: white;
+  background-color: #000000;
 }
 
 .is-hidden {
@@ -443,11 +462,11 @@ header.visible, footer.visible {
 .menu__close {
   width: 40px;
   height: 40px;
-  fill: #000000;
+  fill: #ffffff;
 }
 
 .menu__btn:hover .menu__close {
-  fill: black;
+  fill: #2196F3;
 }
 
 .menu__list {
@@ -457,7 +476,7 @@ header.visible, footer.visible {
 }
 
 .menu__link {
-  color: #212121;
+  color: #ffffff;
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.8px;
@@ -495,7 +514,7 @@ header.visible, footer.visible {
 }
 
 .menu__item-contact:last-child > .menu__link-contact {
-  color: #ffffff;
+  color: #757575;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.48px;
@@ -524,24 +543,45 @@ header.visible, footer.visible {
   display: block;
   width: 1px;
   height: 22px;
-  background: rgba(33, 33, 33, 0.2);
+  background: rgb(255, 255, 255);
   margin-left: 10px;
 }
 
 .hero {
-  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/photohero.jpg);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@1x.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000000;
+  text-align: center;
+  overflow: hidden;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/hero-tablet@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/deskstop/hero-desktop@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/deskstop/hero-desktop@2x.jpg);
   }
 }
 .hero__main {

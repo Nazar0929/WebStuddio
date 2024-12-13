@@ -21,6 +21,12 @@
 
         <div class="container header__box">
         <a href="./index.html" class="header__logos"><span class="header__span">Web</span><span class="header__studio">Studio</span></a>
+        <div class="header__containe">
+            <span class="header__buttone">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox" class="header__label"></label>
+            </span>
+          </div>
         <button type="button" class="header__button" data-modal-header-open>
             <svg class="header__menu">
               <use href="./images/symbol-defs.svg#icon-open"></use>
@@ -31,14 +37,6 @@
         <li class="header__caption"><a href="./index.html" class="header__link header__active">Студія</a></li>
         <li class="header__caption"><a href="./pages/portfolio.html" class="header__link ">Портфоліо</a></li>
         <li class="header__caption"><a href="./pages/contact.html" class="header__link">Контакти </a></li>
-        <li>
-            <div class="header__containe">
-                <span class="header__buttone">
-                <input type="checkbox" name="checkbox" id="checkbox" />
-                <label for="checkbox" class="header__label"></label>
-                </span>
-              </div>
-        </li>
       </ul>
         </nav>
         <ul class="header__description">
@@ -146,7 +144,12 @@
             <h2 class="team__comand">Наша команда</h2>
             <ul class="team__lists">
                 <li class="team__work">
-                    <img src="./images/ihor.jpg" alt="Ihor" class="team__photos">
+                    <picture>
+                        <source srcset="./images/deskstop/igor-desktop@1x.jpg 1x, ./images/deskstop/igor-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/tablet/igor-tablet@1x.jpg 1x, ./images/tablet/igor-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mobile/igor-mobile@1x.jpg 1x, ./images/mobile/igor-mobile@2x.jpg 2x" media="(max-width: 767px)">
+                        <img src="./images/ihor.jpg" alt="Ihor" class="team__photos">
+                    </picture>
                     <div class="team__card">
                     <h3 class="team__name">Ігор Дем'янчук</h3>
                     <p class="team__job">Product Designer</p>

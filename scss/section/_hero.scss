@@ -12,7 +12,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
         background-image: linear-gradient(  rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url(/images/mobile/hero-mobile@2x.jpg);
+        rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@2x.jpg);
       }
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
         rgba(47, 48, 58, 0.4)
       ),
   
-      url(/images/tablet/hero-tablet@1x.jpg);
+      url(../images/tablet/hero-tablet@1x.jpg);
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {

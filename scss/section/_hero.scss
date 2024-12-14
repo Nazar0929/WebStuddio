@@ -6,8 +6,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-
-
   
       url(../images/mobile/hero-mobile@1x.jpg);
       @media (min-device-pixel-ratio: 2),
@@ -16,6 +14,7 @@
         background-image: linear-gradient(  rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@2x.jpg);
       }
+      
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

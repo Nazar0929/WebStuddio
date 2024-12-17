@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__box">
+        <a href="../index.html" class="header__logos"><span class="header__span">Web</span><span class="header__studio">Studio</span></a>
+        <div class="header__containe">
+            <span class="header__buttone">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox" class="header__label"></label>
+            </span>
+          </div>
+        <button type="button" class="header__button" data-modal-header-open>
+            <svg class="header__menu">
+              <use href="../images/symbol-defs.svg#icon-open"></use>
+            </svg>
+          </button>
+        <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__caption"><a href="../index.html" class="header__link header__activess">Студія</a></li>
+        <li class="header__caption"><a href="../pages/portfolio.html" class="header__link ">Портфоліо</a></li>
+        <li class="header__caption"><a href="../pages/contact.html" class="header__link">Контакти </a></li>
+      </ul>
+        </nav>
+        <ul class="header__description">
+            <li class="header__text">
+                <a href="mailto:info@devstudio.com" class="header__contact">
+                    <svg class="header__email">
+                        <use href="../images/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                    <p class="header__address">info@devstudio.com</p>
+                </a>
+            </li>
+            <li class="header__text">
+                <a href="tel:+380961111111" class="header__contact">
+                    <svg class="header__phone">
+                        <use href="../images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    <p class="header__number">+38 096 111 11 11</p>
+                </a>
+            </li>
+        </ul>
+        <div class="menu is-hidden" data-header-modal>
+            <button type="button" class="menu__btn" data-modal-header-close>
+              <svg class="menu__close">
+                <use href="../images/symbol-defs.svg#icon-burger-svg"></use>
+              </svg>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item"><a href="../index.html" class="menu__link">Студія</a></li>
+              <li class="menu__item"><a href="../pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+              <li class="menu__item"><a href="../pages/contact.html" class="menu__link">Контакти</a></li>
+            </ul>
+            <div class="ssw">
+            <ul class="menu__list-contact">
+              <li class="menu__item-contact"><a href="tel:+38096111111" class="menu__link-contact">+38 096 111 11 11</a></li>
+              <li class="menu__item-contact"><a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu__list-social">
+              <li class="menu__item-social"><a href="" class="menu__link-social">Instagram</a></li>
+              <li class="menu__item-social"><a href="" class="menu__link-social">Twitter</a></li>
+              <li class="menu__item-social"><a href="" class="menu__link-social">Facebook</a></li>
+              <li class="menu__item-social"><a href="" class="menu__link-social">LinkedIn</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </header>
+
+
+    <section class="program">
+        <div class="container">
+            <div class="program__wrap">
+            <div class="program__item">
+                <a href="https://www.imdb.com/name/nm12621844/" class="buttonn program__buttonn" target="_blank" aria-label="Icon-only Button"> 
+                    <svg class="program__svg">
+                        <use href="../images/symbol-defs.svg#icon-tagline"></use>
+                    </svg>
+                </a>
+                <p class="program__discount">Free & Paid</p>
+                <ul class="program__button">
+                    <li><a type="button" class="program__like"><img src="../images/iconslike.png" alt="" class="image-description"></a></li>
+                    <li><a type="button" download="" class="program__lik"><img src="../images/folderaddoutline.png" alt="" class="image-caption"></a></li>
+                </ul>
+                </div>
+                <div>
+                <div class="program__king">
+                    <h2 class="program__text">TAGLINE</h2>
+                    <p class="program__description">Specializing in [industry or field], the company prides itself on delivering top-quality products and services that cater to the evolving needs of its clients. With a focus on customer satisfaction and continuous improvement, Foster Peters is dedicated to making a positive impact and driving success in the marketplace."</p>
+                    <div class="program__link">
+                    <a type="button" onclick="location.href='../index.html#target-section'"  class="program__buttons">Go Back</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+        <div>
+            <address class="footer-addresss">
+        <ul class="footer__list">
+            <li class="footer__logo"><a href="../index.html" class="footer__logotype"><span class="footer__Web">Web</span>Studio</a></li>
+            <li class="footer__mailro"><a href="https://maps.app.goo.gl/3WHMfzr2wy2bExne6" target="_blank" class="footer__link">м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li class="footer__mailtro"><a href="mailto:info@devstudio.com" target="_blank" class="footer__contain">info@devstudio.com</a></li>
+            <li class="footer__mailtro"><a href="tel:+380961111111" target="_blank" class="footer__contain">+38 096 111 11 11</a></li>
+        </ul>
+        </address>
+        </div>
+        <div class="footer__second">
+            <p class="footer__join">приєднуйтесь</p>
+        <ul class="footer__wrap">
+                <li class="footer__flex">
+                <a href="https://www.instagram.com/" class="footer__buttont" aria-label="Icon-only Button"> 
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 32 32" 
+                        aria-hidden="true" 
+                        class="footer__online" 
+                        focusable="false">
+                        <use href="../images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__flex">
+                <a href="javascript:;" class="footer__buttont" aria-label="Icon-only Button"> 
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 32 32" 
+                        aria-hidden="true" 
+                        class="footer__online" 
+                        focusable="false">
+                        <use href="../images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__flex">
+                <a href="javascript:;" class="footer__buttont" aria-label="Icon-only Button"> 
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 32 32" 
+                        aria-hidden="true" 
+                        class="footer__online" 
+                        focusable="false">
+                        <use href="../images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__flex">
+                <a href="javascript:;" class="footer__buttont" aria-label="Icon-only Button"> 
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 32 32" 
+                        aria-hidden="true" 
+                        class="footer__online" 
+                        focusable="false">
+                        <use href="../images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+            </ul>
+            </div>
+            <div class="footer__form">
+                <p class="footer__subscribe">Підпишіться на розсилку</p>
+            <form class="footer__button">
+                <div class="footer__forms">
+                <input type="email" id="email" class="footer__input" placeholder="E-mail" required>
+                <div class="footer__flexing">
+            <button type="submit" class="footer__buttonlink">Підписатися 
+                <svg class="footer__telegram">
+                    <use href="../images/symbol-defs.svg#icon-iconsend"></use>
+                </svg>
+            </button>
+                </div>
+            </div>
+            </form>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../js/yaco.js"></script>
+
+</body>
+</html>

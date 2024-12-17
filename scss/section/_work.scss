@@ -19,12 +19,30 @@
         text-align: center;
         letter-spacing: 0.03em;
         margin-bottom: 50px;
+        scale: (1);
+        transition: scale 0.4s ease;
+        color: $burger-studio;
+        
 
         &:hover {
             font-size: 40px;
+            scale: (1.05);
         }
         
     }
+
+
+    @keyframes fadeEffect {
+        0% {
+          opacity: 1; /* Початкова прозорість (повна видимість) */
+        }
+        50% {
+          opacity: 0.5; /* Трохи прозора */
+        }
+        100% {
+          opacity: 1; /* Повернення до повної видимості */
+        }
+      }
 
     &__text {
         display: flex;
@@ -82,6 +100,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
+
 }
 
 &__text {
@@ -96,6 +116,8 @@
 
 &__moderning {
     width: 100%;
+    animation: fadeEffect 4s ease-in-out infinite; 
+    
 }
 
 

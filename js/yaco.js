@@ -51,3 +51,16 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
   
+
+
+const checkbox = document.getElementById('checkbox');
+
+// Перевіряємо, чи є збережений стан в localStorage
+if (localStorage.getItem('isChecked') === 'true') {
+  checkbox.checked = true;
+}
+
+// Додаємо обробник події, який змінює стан зберігання при кліку
+checkbox.addEventListener('change', () => {
+  localStorage.setItem('isChecked', checkbox.checked);
+});

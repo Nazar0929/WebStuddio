@@ -1,4 +1,11 @@
 
+:root {
+    --background-color: #FFF;
+}
+
+.darkstyle {
+    --background-color: black;
+}
 
 
 .container {
@@ -81,7 +88,12 @@
 
 }
 
-
+.contacts__map {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
 
 
 
@@ -297,12 +309,13 @@
 }
 
 .backdrop {
+    margin-left: 16px;
     width: 412px;
     padding: 50px;
     border-radius: 25px;
     background: #FFF;
     box-shadow: 0px 20px 50px 0px rgba(176, 176, 176, 0.20);
-    margin-left: -142px;
+
 }
 
 .text-form {

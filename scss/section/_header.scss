@@ -141,6 +141,29 @@
               transform: scaleX(0); /* Линия исчезает */
           }
       }
+
+
+      &__actives {
+        color: $additional-accent;
+  
+          &::after {
+              content: "";
+              width: 100%; /* Линия занимает всю ширину родителя */
+              height: 4px; /* Высота линии */
+              background-color: $additional-accent;
+              border-radius: 2px; /* Закругление краев линии */
+              display: block;
+              position: absolute; /* Абсолютное позиционирование */
+              left: 0;
+              transform: scaleX(1); /* Начальное состояние — линия видна */
+              top: 50px;
+              transition: transform 0.3s ease-in-out; /* Плавная анимация */
+          }
+      
+          &:hover::after {
+              transform: scaleX(0); /* Линия исчезает */
+          }
+      }
       
 
 
